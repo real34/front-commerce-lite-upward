@@ -1,0 +1,27 @@
+{
+  "name": "front-commerce-lite",
+  "version": "1.0.0",
+  "description": "A boilerplate for prototyping eCommerce experiences and see if Front-Commerce is",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front-commerce/front-commerce-lite.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "react",
+    "graphql",
+    "apollo",
+    "pwa",
+    "magento2"
+  ],
+  "author": "Front-Commerce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/front-commerce/front-commerce-lite/issues"
+  },
+  "homepage": "https://github.com/front-commerce/front-commerce-lite#readme"
+}

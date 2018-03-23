@@ -1,0 +1,16 @@
+version: '2'
+services:
+  npm:
+    image: node:8.10.0
+    network_mode: "bridge"
+    expose:
+        - 4000
+    volumes:
+      - ./:/project
+      - ~/.npm:/root/.npm
+    command: run dev
+    entrypoint: npm
+    working_dir: /project
+    environment:
+        VIRTUAL_HOST: front-commerce-lite.test
+        VIRTUAL_PORT: 4000
