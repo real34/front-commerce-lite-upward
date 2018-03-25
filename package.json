@@ -27,7 +27,8 @@
   "homepage": "https://github.com/front-commerce/front-commerce-lite#readme",
   "dependencies": {
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.42",

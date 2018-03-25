@@ -6,6 +6,7 @@ module.exports = {
   entry: "./src/web/index.js",
   output: {
     filename: "bundle.js",
+    publicPath: "/",
     path: path.resolve(__dirname, "build")
   },
   plugins: [
@@ -30,6 +31,7 @@ module.exports = {
   devServer: {
     contentBase: "./build",
     host: "0.0.0.0",
-    disableHostCheck: true
+    disableHostCheck: true,
+    historyApiFallback: true
   }
 };
