@@ -1,4 +1,6 @@
 import express from "express";
+import withGraphQLApi from "./express/withGraphQLApi";
+import modules from "./modules.js";
 
 const config = {
   host: process.env.FRONT_COMMERCE_HOST || "0.0.0.0",
@@ -7,7 +9,7 @@ const config = {
 
 const app = express();
 
-app.get("/", (_, res) => res.send("Hello world!"));
+app.use(withGraphQLApi(modules));
 
 const server = app.listen(config.port, config.host, undefined, () => {
   /* eslint-disable no-console */

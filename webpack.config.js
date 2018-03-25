@@ -12,6 +12,11 @@ const universalRules = [
         presets: ["@babel/preset-env", "@babel/react"]
       }
     }
+  },
+  {
+    test: /\.(graphql|gql)$/,
+    exclude: /node_modules/,
+    loader: "graphql-tag/loader"
   }
 ];
 

@@ -1,0 +1,37 @@
+type Query {
+  "General information about this store"
+  store: StoreInformation
+}
+
+"General information about a store"
+type StoreInformation {
+  "Store name"
+  name: String!
+  "Support phone number"
+  phone: String
+  "Store owner"
+  owner: StoreOwner
+}
+
+"""
+The Owner of a store, with contact and personal
+information to make the store more human
+"""
+type StoreOwner {
+  gender: Gender
+  displayName: String!
+  email: String!
+  picture(size: ImageSize = medium): String!
+}
+
+enum Gender {
+  FEMALE
+  MALE
+  NONBINARY
+}
+
+enum ImageSize {
+  large
+  medium
+  thumbnail
+}
