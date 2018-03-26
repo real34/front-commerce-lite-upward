@@ -5,13 +5,15 @@ const NodeExternals = require("webpack-node-externals");
 
 const sass = {
   globalsImportStatements: '@import "globals.scss";',
-  globalsImportPaths: [path.resolve(__dirname, "src", "web", "theme")]
+  globalsImportPaths: [path.resolve(__dirname, "src/web/theme")]
 };
+
+const srcPath = path.resolve(__dirname, "src");
 
 const universalRules = [
   {
     test: /\.js$/,
-    exclude: /node_modules/,
+    include: [srcPath],
     use: {
       loader: "babel-loader",
       options: {
@@ -21,11 +23,12 @@ const universalRules = [
   },
   {
     test: /\.(graphql|gql)$/,
-    exclude: /node_modules/,
+    include: [srcPath],
     loader: "graphql-tag/loader"
   },
   {
     test: /\.scss$/,
+    include: [srcPath],
     use: [
       {
         loader: "style-loader"
@@ -48,7 +51,7 @@ module.exports = [
   {
     name: "client",
     mode: "development",
-    entry: path.resolve(__dirname, "src", "web", "index.js"),
+    entry: path.resolve(__dirname, "src/web/index.js"),
     output: {
       filename: "bundle.js",
       publicPath: "/",
@@ -78,10 +81,7 @@ module.exports = [
     mode: "development",
     target: "node",
     externals: [NodeExternals()],
-    entry: [
-      "babel-polyfill",
-      path.resolve(__dirname, "src", "server", "index.js")
-    ],
+    entry: ["babel-polyfill", path.resolve(__dirname, "src/server/index.js")],
     output: {
       filename: "server.js",
       path: path.resolve(__dirname, "build")
