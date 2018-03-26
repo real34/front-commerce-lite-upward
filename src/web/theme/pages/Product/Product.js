@@ -33,29 +33,27 @@ const BackHome = () => (
   </p>
 );
 
-const Product = ({ product }) => (
-  <div>
-    <ProductHead sku={product.sku}>{product.name}</ProductHead>
+const Product = ({ loading, product }) => {
+  if (loading) {
+    return <React.Fragment>Loading…</React.Fragment>;
+  } else if (!product) {
+    return <Redirect to="/not-found" />;
+  }
 
-    <Price price={product.prices.finalPrice.priceInclTax} />
-    <ProductDescription>{product.description}</ProductDescription>
+  return (
+    <div>
+      <ProductHead sku={product.sku}>{product.name}</ProductHead>
 
-    <BackHome />
-  </div>
-);
+      <Price price={product.prices.finalPrice.priceInclTax} />
+      <ProductDescription>{product.description}</ProductDescription>
+
+      <BackHome />
+    </div>
+  );
+};
 
 export default compose(
   withRouter,
   withProps(props => ({ sku: props.sku || props.match.params.sku })),
-  EnhanceProduct(ProductQuery),
-  branch(
-    props => props.loading,
-    () => () => <div>Loading…</div>,
-    BaseComponent => BaseComponent
-  ),
-  branch(
-    props => props.product,
-    BaseComponent => BaseComponent,
-    () => () => <Redirect to="/not-found" />
-  )
+  EnhanceProduct(ProductQuery)
 )(Product);
