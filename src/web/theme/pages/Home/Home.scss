@@ -1,0 +1,8 @@
+.page--home {
+  margin-top: 2rem;
+  background: $backgroundColor;
+
+  & h1 {
+    color: $brandPrimary;
+  }
+}

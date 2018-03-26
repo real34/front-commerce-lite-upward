@@ -2,6 +2,11 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const NodeExternals = require("webpack-node-externals");
 
+const sass = {
+  globalsImportStatements: '@import "globals.scss";',
+  globalsImportPaths: [path.resolve(__dirname, "src", "web", "theme")]
+};
+
 const universalRules = [
   {
     test: /\.js$/,
@@ -17,6 +22,24 @@ const universalRules = [
     test: /\.(graphql|gql)$/,
     exclude: /node_modules/,
     loader: "graphql-tag/loader"
+  },
+  {
+    test: /\.scss$/,
+    use: [
+      {
+        loader: "style-loader"
+      },
+      {
+        loader: "css-loader"
+      },
+      {
+        loader: "sass-loader",
+        options: {
+          data: sass.globalsImportStatements,
+          includePaths: sass.globalsImportPaths
+        }
+      }
+    ]
   }
 ];
 
