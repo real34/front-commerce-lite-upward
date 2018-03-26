@@ -25,17 +25,21 @@
   "homepage": "https://github.com/front-commerce/front-commerce-lite#readme",
   "dependencies": {
     "@gramps/gramps": "^1.4.0",
+    "apollo-boost": "^0.1.3",
     "apollo-link-http": "^1.5.3",
     "apollo-server-express": "^1.3.2",
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
     "graphql": "^0.13.2",
     "graphql-tools": "^2.23.1",
     "node-fetch": "^2.1.2",
     "react": "^16.2.0",
+    "react-apollo": "^2.1.0",
     "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "recompose": "^0.26.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.42",

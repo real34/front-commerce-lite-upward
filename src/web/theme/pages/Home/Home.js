@@ -1,11 +1,17 @@
 import React from "react";
 import Link from "react-router-dom/Link";
+import HomeQuery from "./HomeQuery.gql";
+import EnhanceHome from "./EnhanceHome";
 
-export default () => (
+const Home = ({ store }) => (
   <div>
     <h1>Welcome on FCL</h1>
     <p>
-      Please visit an <Link to="/product/awesome-product">awesome product</Link>
+      Please visit an <Link to="/product/24-WG088">awesome product</Link>
     </p>
+
+    {store && <pre>{JSON.stringify(store, null, 2)}</pre>}
   </div>
 );
+
+export default EnhanceHome(HomeQuery)(Home);

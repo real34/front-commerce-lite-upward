@@ -1,0 +1,12 @@
+query Home {
+  store {
+    name
+    phone
+    owner {
+      gender
+      displayName
+      email
+      picture(size: medium)
+    }
+  }
+}

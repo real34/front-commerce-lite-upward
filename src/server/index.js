@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import withGraphQLApi from "./express/withGraphQLApi";
 import modules from "./modules.js";
 
@@ -10,6 +11,11 @@ const config = {
 async function start() {
   const app = express();
 
+  app.use(
+    cors({
+      origin: "*"
+    })
+  );
   app.use(await withGraphQLApi(modules));
 
   const server = app.listen(config.port, config.host, undefined, () => {

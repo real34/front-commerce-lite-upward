@@ -1,0 +1,20 @@
+#import "../../ui/atoms/Price/PriceFragment.gql"
+
+fragment Product on ProductType {
+  sku
+  name
+  description
+  prices {
+    finalPrice {
+      priceInclTax {
+        ...PriceFragment
+      }
+    }
+  }
+}
+
+query Product($sku: String!) {
+  product(sku: $sku) {
+    ...Product
+  }
+}
