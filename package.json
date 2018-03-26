@@ -2,7 +2,7 @@
   "name": "front-commerce-lite",
   "version": "1.0.0",
   "description":
-    "A boilerplate for prototyping eCommerce experiences and see if Front-Commerce is",
+    "Prototype your next eCommerce experiences using modern web technologies",
   "scripts": {
     "lint": "eslint --max-warnings=0 --fix \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
