@@ -6,7 +6,7 @@ query Home {
       gender
       displayName
       email
-      picture(size: medium)
+      picture(size: large)
     }
   }
 }
