@@ -51,7 +51,10 @@ module.exports = [
     mode: "development",
     target: "node",
     externals: [NodeExternals()],
-    entry: path.resolve(__dirname, "src", "server", "index.js"),
+    entry: [
+      "babel-polyfill",
+      path.resolve(__dirname, "src", "server", "index.js")
+    ],
     output: {
       filename: "server.js",
       path: path.resolve(__dirname, "build")

@@ -25,11 +25,14 @@
   "homepage": "https://github.com/front-commerce/front-commerce-lite#readme",
   "dependencies": {
     "@gramps/gramps": "^1.4.0",
+    "apollo-link-http": "^1.5.3",
     "apollo-server-express": "^1.3.2",
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "graphql": "^0.13.2",
+    "graphql-tools": "^2.23.1",
+    "node-fetch": "^2.1.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2"
@@ -40,6 +43,7 @@
     "@babel/preset-react": "^7.0.0-beta.42",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^8.0.0-beta.2",
+    "babel-polyfill": "^6.26.0",
     "eslint": "^4.19.1",
     "eslint-config-react-app": "^2.1.0",
     "eslint-plugin-flowtype": "^2.46.1",
