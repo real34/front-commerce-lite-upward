@@ -15,3 +15,15 @@ ReactDOM.render(
   </ApolloProvider>,
   document.getElementById("app")
 );
+
+if (module.hot) {
+  module.hot.accept("./theme/Routes", () => {
+    const NextAppRoutes = require("./theme/Routes").default;
+    ReactDOM.render(
+      <ApolloProvider client={client}>
+        <NextAppRoutes />
+      </ApolloProvider>,
+      document.getElementById("app")
+    );
+  });
+}
