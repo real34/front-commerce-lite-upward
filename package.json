@@ -11,7 +11,8 @@
     "dev:server":
       "npm run watch:server & NODE_ENV=development nodemon build/server.js",
     "dev:client":
-      "NODE_ENV=development webpack-dev-server --config webpack.config.js"
+      "NODE_ENV=development webpack-dev-server --config webpack.config.js",
+    "start": "npm run dev:server & npm run dev:client"
   },
   "repository": {
     "type": "git",

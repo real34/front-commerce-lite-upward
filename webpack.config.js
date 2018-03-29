@@ -69,6 +69,7 @@ module.exports = [
     },
     devServer: {
       hot: true,
+      open: true,
       contentBase: "./build",
       host: "0.0.0.0",
       overlay: true,

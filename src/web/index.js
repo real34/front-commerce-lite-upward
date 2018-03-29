@@ -5,8 +5,7 @@ import { ApolloProvider } from "react-apollo";
 import Routes from "./theme/Routes";
 
 const client = new ApolloClient({
-  // uri: "http://server.front-commerce-lite.test/graphql" // if using Docker Compose with nginx-proxy
-  uri: "http://127.0.0.1:4000/graphql" // in a local node environment
+  uri: "http://127.0.0.1:4000/graphql"
 });
 
 ReactDOM.render(

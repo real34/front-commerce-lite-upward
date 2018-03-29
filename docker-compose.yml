@@ -3,29 +3,12 @@ services:
   npm:
     image: node:8.10.0
     network_mode: "bridge"
-    expose:
-        - 8080
+    ports:
+      - "4000:4000"
+      - "8080:8080"
     volumes:
       - ./:/project
       - ~/.npm:/root/.npm
-    command: run dev:client
+    command: start
     entrypoint: npm
     working_dir: /project
-    environment:
-        VIRTUAL_HOST: front-commerce-lite.test
-        VIRTUAL_PORT: 8080
-
-  server:
-    image: node:8.10.0
-    network_mode: "bridge"
-    expose:
-        - 4000
-    volumes:
-      - ./:/project
-      - ~/.npm:/root/.npm
-    command: run dev:server
-    entrypoint: npm
-    working_dir: /project
-    environment:
-        VIRTUAL_HOST: server.front-commerce-lite.test
-        VIRTUAL_PORT: 4000
