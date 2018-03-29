@@ -35,7 +35,7 @@ const BackHome = () => (
 
 const Product = ({ loading, product }) => {
   if (loading) {
-    return <React.Fragment>Loading…</React.Fragment>;
+    return "Loading…";
   } else if (!product) {
     return <Redirect to="/not-found" />;
   }
