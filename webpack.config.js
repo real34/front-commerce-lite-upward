@@ -14,6 +14,12 @@ const universalRules = [
   {
     test: /\.js$/,
     include: [srcPath],
+    loader: "eslint-loader",
+    enforce: "pre"
+  },
+  {
+    test: /\.js$/,
+    include: [srcPath],
     use: {
       loader: "babel-loader",
       options: {
