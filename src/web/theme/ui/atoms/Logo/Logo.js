@@ -1,8 +1,8 @@
 import React from "react";
 
-const Logo = ({ logo, alt }) => (
+const Logo = () => (
   <span className="logo">
-    <img src={logo} alt={alt} />
+    <img src="" alt="FC Lite" />
   </span>
 );
 

@@ -8,7 +8,7 @@ import LoadingArea from "../../ui/molecules/LoadingArea";
 
 const Home = ({ store, category }) => (
   <div className="page page--home">
-    <HomeBanner store={store} />
+    <HomeBanner storeName={store && store.name} />
     {category ? (
       <ProductList products={category.layer.products} />
     ) : (

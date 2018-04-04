@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const StoreDetails = ({ owner }) => (
   <div>
@@ -9,5 +10,13 @@ const StoreDetails = ({ owner }) => (
     </p>
   </div>
 );
+
+StoreDetails.propTypes = {
+  owner: PropTypes.shape({
+    displayName: PropTypes.string,
+    email: PropTypes.string,
+    picture: PropTypes.string
+  })
+};
 
 export default StoreDetails;
