@@ -6,7 +6,7 @@ import withProps from "recompose/withProps";
 
 import EnhanceProduct from "./EnhanceProduct";
 import ProductQuery from "./ProductQuery.gql";
-import ProductInformation from "../../modules/ProductInformation";
+import ProductView from "../../modules/ProductView";
 import HeroImage from "../../modules/HeroImage";
 import LoadingArea from "../../ui/molecules/LoadingArea";
 
@@ -19,7 +19,7 @@ const Product = ({ loading, product }) => {
 
   return (
     <div className="page page--product">
-      <ProductInformation product={product} />
+      <ProductView product={product} />
       <HeroImage path={product.imageUrl} alt={product.name} />
     </div>
   );
