@@ -18,13 +18,7 @@ ProductView.propTypes = {
   product: PropTypes.shape({
     sku: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    price: PropTypes.shape({
-      includeTax: PropTypes.bool.isRequired,
-      value: PropTypes.shape({
-        amount: PropTypes.number.isRequired,
-        currency: PropTypes.oneOf(currenciesWhitelist).isRequired
-      })
-    }),
+    prices: PropTypes.object.isRequired,
     description: PropTypes.string
   })
 };
