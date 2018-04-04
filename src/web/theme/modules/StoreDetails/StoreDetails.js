@@ -1,13 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { H2 } from "../../ui/atoms/Typography/Heading";
+import Paragraph from "../../ui/atoms/Typography/Paragraph";
+import Link from "../../ui/atoms/Typography/Link";
 
 const StoreDetails = ({ owner }) => (
   <div>
-    <h2>Your contact today: {owner.displayName}</h2>
+    <H2>Your contact today: {owner.displayName}</H2>
     <img src={owner.picture} alt="" />
-    <p>
-      Email: <a href={`mailto:${owner.email}`}>{owner.email}</a>
-    </p>
+    <Paragraph>
+      Email:{" "}
+      <Link href={`mailto:${owner.email}`} external>
+        {owner.email}
+      </Link>
+    </Paragraph>
   </div>
 );
 

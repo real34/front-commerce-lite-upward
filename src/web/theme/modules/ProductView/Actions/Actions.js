@@ -1,9 +1,10 @@
 import React from "react";
+import Button from "../../../ui/atoms/Button";
 
 const Actions = () => {
   return (
-    <div className="">
-      <button>add to cart</button>
+    <div className="product-actions">
+      <Button>add to cart</Button>
     </div>
   );
 };

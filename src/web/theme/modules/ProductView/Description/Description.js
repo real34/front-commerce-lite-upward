@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const Description = ({ children }) =>
   children && (
     <div
+      className="product-description"
       dangerouslySetInnerHTML={{
         __html: children
       }}

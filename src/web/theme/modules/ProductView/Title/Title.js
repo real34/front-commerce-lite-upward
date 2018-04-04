@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { H1 } from "../../../ui/atoms/Typography/Heading";
 
 const Title = ({ children, sku }) => (
-  <h1>
+  <H1>
     {children}
     {sku && <small> ({sku})</small>}
-  </h1>
+  </H1>
 );
 
 Title.propTypes = {
