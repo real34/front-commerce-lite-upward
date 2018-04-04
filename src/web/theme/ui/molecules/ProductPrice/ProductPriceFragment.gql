@@ -1,5 +1,5 @@
-#import "./PriceFragment.gql"
-# MOLECULE !
+#import "../../atoms/Typography/Price/PriceFragment.gql"
+
 fragment ProductPriceFragment on ProductType {
   prices {
     finalPrice {

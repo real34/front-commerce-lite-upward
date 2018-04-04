@@ -1,4 +1,4 @@
-#import "../../ui/atoms/Typography/Price/ProductPriceFragment.gql"
+#import "../../ui/molecules/ProductPrice/ProductPriceFragment.gql"
 
 fragment ProductItemFragment on ProductType {
   path
