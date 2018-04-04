@@ -1,8 +1,29 @@
 import { graphql } from "react-apollo";
+import compose from "recompose/compose";
+import withProps from "recompose/withProps";
+
+const CATEGORY_ID = 21;
+const SIZE = 8;
 
 export default HomeQuery =>
-  graphql(HomeQuery, {
-    props: ({ data }) => ({
-      store: !data.loading && data.store
+  compose(
+    withProps(props => ({
+      categoryId: CATEGORY_ID,
+      size: SIZE
+    })),
+    graphql(HomeQuery, {
+      options: props => ({
+        variables: {
+          id: props.categoryId,
+          params: {
+            size: props.size,
+            from: 0
+          }
+        }
+      }),
+      props: ({ data }) => ({
+        category: !data.loading && data.category,
+        store: !data.loading && data.store
+      })
     })
-  });
+  );

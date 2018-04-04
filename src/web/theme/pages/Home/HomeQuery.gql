@@ -1,12 +1,11 @@
-query Home {
+#import "./CategoryFragment.gql"
+#import "./StoreInformationFragment.gql"
+
+query HomeQuery($id: Int!, $params: QueryInput!) {
+  category(id: $id) {
+    ...CategoryFragment
+  }
   store {
-    name
-    phone
-    owner {
-      gender
-      displayName
-      email
-      picture(size: large)
-    }
+    ...StoreInformationFragment
   }
 }

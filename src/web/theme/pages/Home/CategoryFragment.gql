@@ -1,0 +1,10 @@
+#import "../../modules/ProductItem/ProductItemFragment.gql"
+
+fragment CategoryFragment on CategoryType {
+  name
+  layer(params: $params) {
+    products {
+      ...ProductItemFragment
+    }
+  }
+}

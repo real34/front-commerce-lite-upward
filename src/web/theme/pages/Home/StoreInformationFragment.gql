@@ -1,0 +1,10 @@
+fragment StoreInformationFragment on StoreInformation {
+  name
+  phone
+  owner {
+    gender
+    displayName
+    email
+    picture(size: large)
+  }
+}
