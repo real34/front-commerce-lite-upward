@@ -1,0 +1,3 @@
+fragment StoreInformationFragment on StoreInformation {
+  name
+}

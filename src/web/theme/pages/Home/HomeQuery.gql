@@ -1,5 +1,5 @@
 #import "./CategoryFragment.gql"
-#import "./StoreInformationFragment.gql"
+#import "./StoreNameFragment.gql"
 
 query HomeQuery($id: Int!, $params: QueryInput!) {
   category(id: $id) {

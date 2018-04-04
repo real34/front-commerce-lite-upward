@@ -1,0 +1,11 @@
+query Layout {
+  store {
+    phone
+    owner {
+      gender
+      displayName
+      email
+      picture(size: large)
+    }
+  }
+}
