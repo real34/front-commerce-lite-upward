@@ -1,8 +1,9 @@
-#import "../../ui/atoms/Price/PriceFragment.gql"
+#import "../../ui/atoms/Typography/Price/PriceFragment.gql"
 
 fragment Product on ProductType {
   sku
   name
+  imageUrl
   description
   prices {
     finalPrice {
