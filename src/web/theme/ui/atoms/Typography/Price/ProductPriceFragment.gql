@@ -1,0 +1,14 @@
+#import "./PriceFragment.gql"
+# MOLECULE !
+fragment ProductPriceFragment on ProductType {
+  prices {
+    finalPrice {
+      priceInclTax {
+        ...PriceFragment
+      }
+      priceExclTax {
+        ...PriceFragment
+      }
+    }
+  }
+}
