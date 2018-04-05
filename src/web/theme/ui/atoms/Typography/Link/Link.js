@@ -15,10 +15,7 @@ const LinkComponent = ({ to, children, external, onClick }) => {
 };
 
 LinkComponent.propTypes = {
-  to: PropTypes.oneOfType([
-    PropTypes.string.isRequired,
-    PropTypes.object.isRequired
-  ]),
+  to: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   external: PropTypes.bool,
   onClick: PropTypes.func

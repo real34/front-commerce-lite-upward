@@ -1,21 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Button = ({ onClick, children, disabled, pending, type }) => {
-  const buttonClasses = `${disabled ? "disabled" : ""}${
-    pending ? " pending" : ""
-  }`;
-
+const Button = ({ onClick, children, status, type }) => {
   return (
     <button
       onClick={
-        disabled
+        status === "disabled"
           ? e => {
               e.preventDefault();
             }
           : onClick
       }
-      className={buttonClasses}
+      className={status}
       type={type}
     >
       {children}
@@ -26,8 +22,7 @@ const Button = ({ onClick, children, disabled, pending, type }) => {
 Button.propTypes = {
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
-  disabled: PropTypes.bool,
-  pending: PropTypes.bool,
+  status: PropTypes.string,
   type: PropTypes.string
 };
 

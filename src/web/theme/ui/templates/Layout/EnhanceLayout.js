@@ -3,6 +3,6 @@ import { graphql } from "react-apollo";
 export default LayoutQuery =>
   graphql(LayoutQuery, {
     props: ({ data }) => ({
-      store: !data.loading && data.store
+      store: data.store
     })
   });

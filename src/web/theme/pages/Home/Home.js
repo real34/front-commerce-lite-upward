@@ -6,13 +6,13 @@ import ProductList from "../../modules/ProductList";
 import HomeBanner from "../../modules/HomeBanner";
 import LoadingArea from "../../ui/molecules/LoadingArea";
 
-const Home = ({ store, category }) => (
+const Home = ({ store, category, loading }) => (
   <div className="page page--home">
     <HomeBanner storeName={store && store.name} />
-    {category ? (
-      <ProductList products={category.layer.products} />
-    ) : (
+    {loading ? (
       <LoadingArea>Loading products…</LoadingArea>
+    ) : (
+      <ProductList products={category.layer.products} />
     )}
   </div>
 );

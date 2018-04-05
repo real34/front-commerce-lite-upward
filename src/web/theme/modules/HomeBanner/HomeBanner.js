@@ -11,7 +11,7 @@ const HomeBanner = ({ storeName }) => {
 };
 
 HomeBanner.propTypes = {
-  storeName: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
+  storeName: PropTypes.string
 };
 
 export default HomeBanner;

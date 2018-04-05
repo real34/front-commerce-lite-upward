@@ -1,16 +1,18 @@
 import React from "react";
-import Price from "../../ui/atoms/Typography/Price";
+import ProductPrice from "../../ui/molecules/ProductPrice";
 import Sku from "../../ui/atoms/Typography/Sku";
 import createMediaUrlFromPath from "../../../utils/createMediaUrlFromPath";
+import Link from "../../ui/atoms/Typography/Link";
 
-const ProductItem = ({ path, name, prices, sku, imageUrl }) => {
+const ProductItem = ({ name, prices, sku, imageUrl }) => {
   return (
     <div className="product-item">
-      <img src={createMediaUrlFromPath(imageUrl)} alt={name} />
-      path: {path}
-      name: {name}
-      <Price price={prices.finalPrice.priceInclTax} />
-      <Sku sku={sku} />
+      <Link to={`product/${sku}`}>
+        <img src={createMediaUrlFromPath(imageUrl)} alt={name} />
+        {name}
+        <ProductPrice prices={prices} />
+        <Sku sku={sku} />
+      </Link>
     </div>
   );
 };

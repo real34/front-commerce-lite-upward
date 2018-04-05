@@ -3,7 +3,7 @@ import compose from "recompose/compose";
 import withProps from "recompose/withProps";
 
 const CATEGORY_ID = 21;
-const SIZE = 8;
+const SIZE = 9;
 
 export default HomeQuery =>
   compose(
@@ -22,8 +22,9 @@ export default HomeQuery =>
         }
       }),
       props: ({ data }) => ({
-        category: !data.loading && data.category,
-        store: !data.loading && data.store
+        category: data.category,
+        store: data.store,
+        loading: data.loading
       })
     })
   );

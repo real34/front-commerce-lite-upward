@@ -1,7 +1,6 @@
 #import "../../ui/molecules/ProductPrice/ProductPriceFragment.gql"
 
 fragment ProductItemFragment on ProductType {
-  path
   name
   ...ProductPriceFragment
   imageUrl

@@ -13,17 +13,9 @@ const Footer = ({ store }) => {
 };
 
 Footer.propTypes = {
-  store: PropTypes.oneOfType([
-    PropTypes.shape({
-      owner: PropTypes.shape({
-        gender: PropTypes.string,
-        displayName: PropTypes.string,
-        email: PropTypes.string,
-        picture: PropTypes.string
-      }),
-      phone: PropTypes.string
-    }),
-    PropTypes.bool
-  ])
+  store: PropTypes.shape({
+    owner: StoreDetails.propTypes.owner,
+    phone: StoreContact.propTypes.phone
+  })
 };
 export default Footer;
