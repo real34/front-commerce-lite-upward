@@ -5,13 +5,13 @@ $regular: 400;
 $semiBold: 500;
 $bold: 700;
 
-$tinySize: 0.7em;
-$extraSmallSize: 0.8em;
-$smallSize: 1em;
-$mediumSize: 1.2em;
-$regularSize: 1em;
-$extraLargeSize: 2em;
-$giantSize: 2.5em;
+$tinySize: 0.7rem;
+$extraSmallSize: 0.8rem;
+$smallSize: 1rem;
+$mediumSize: 1.2rem;
+$regularSize: 1rem;
+$extraLargeSize: 2rem;
+$giantSize: 2.5rem;
 
 html {
   font-size: $regularSize;
@@ -28,4 +28,9 @@ body {
   font-weight: $regular;
   line-height: 1.42857143;
   margin: 0;
+}
+
+h1 {
+  font-size: $giantSize;
+  color: $brandPrimary;
 }

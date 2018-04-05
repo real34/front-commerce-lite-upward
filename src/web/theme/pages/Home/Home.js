@@ -1,6 +1,5 @@
 import React from "react";
 import HomeQuery from "./HomeQuery.gql";
-import "./Home.scss";
 import EnhanceHome from "./EnhanceHome";
 import ProductList from "../../modules/ProductList";
 import HomeBanner from "../../modules/HomeBanner";

@@ -1,0 +1,15 @@
+.heading-with-addon {
+  text-align: center;
+  margin: 3em 0;
+
+  > * {
+    line-height: $giantSize;
+  }
+  small {
+    display: block;
+    color: $fontColor;
+    font-size: $extraLargeSize;
+    line-height: $giantSize;
+    margin-top: 1rem;
+  }
+}
