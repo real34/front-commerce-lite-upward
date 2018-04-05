@@ -4,10 +4,11 @@ import StoreDetails from "../StoreDetails";
 import StoreContact from "../StoreContact";
 import EnhanceFooter from "./EnhanceFooter";
 import FooterQuery from "./FooterQuery.gql";
+import "./Footer.scss";
 
 const Footer = ({ store }) => {
   return (
-    <footer>
+    <footer className="footer">
       {store && store.owner && <StoreDetails owner={store.owner} />}
       {store && store.phone && <StoreContact phone={store.phone} />}
     </footer>

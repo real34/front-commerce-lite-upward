@@ -1,0 +1,12 @@
+.header {
+  background: $brandPrimary;
+  color: $reverseFontColor;
+  text-align: center;
+  padding: 0.5em;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
