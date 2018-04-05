@@ -7,7 +7,7 @@ const StoreContact = ({ phone }) => {
   return (
     <Paragraph>
       Need help? Call us at{" "}
-      <Link to={`tel:${phone}`} external>
+      <Link to={`tel:${phone}`} external type="reversed">
         {phone}
       </Link>
     </Paragraph>
