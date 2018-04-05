@@ -1,0 +1,11 @@
+#import "../CartFragment.gql"
+
+mutation removeItemFromCart($item_id: Int!) {
+  removeItemFromCart(item_id: $item_id) {
+    success
+    errorMessage
+    cart {
+      ...CartFragment
+    }
+  }
+}

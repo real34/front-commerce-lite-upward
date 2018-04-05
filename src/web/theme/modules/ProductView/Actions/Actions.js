@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "../../../ui/atoms/Button";
+import AddToCart from "../../../ui/molecules/AddToCart";
 
-const Actions = () => {
+const Actions = ({ product }) => {
   return (
     <div className="product-actions">
-      <Button>Add to cart</Button>
+      <AddToCart sku={product.sku}>Add to cart</AddToCart>
     </div>
   );
 };
