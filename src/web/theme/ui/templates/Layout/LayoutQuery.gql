@@ -1,0 +1,7 @@
+#import "../../../modules/Footer/FooterFragment.gql"
+
+query Layout {
+  store {
+    ...FooterFragment
+  }
+}

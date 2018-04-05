@@ -1,12 +1,11 @@
-query Home {
+#import "../../modules/ProductList/ProductListFragment.gql"
+#import "../../modules/HomeBanner/HomeBannerFragment.gql"
+
+query Home($id: Int!, $params: QueryInput!) {
+  category(id: $id) {
+    ...ProductListFragment
+  }
   store {
-    name
-    phone
-    owner {
-      gender
-      displayName
-      email
-      picture(size: large)
-    }
+    ...HomeBannerFragment
   }
 }

@@ -1,0 +1,8 @@
+#import "../../ui/molecules/ProductPrice/ProductPriceFragment.gql"
+
+fragment ProductItemFragment on ProductType {
+  name
+  ...ProductPriceFragment
+  imageUrl
+  sku
+}

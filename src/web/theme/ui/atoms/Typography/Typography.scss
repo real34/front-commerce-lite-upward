@@ -1,5 +1,5 @@
-$roboto: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$mainFontFamily: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
 $regular: 400;
 $semiBold: 500;
@@ -23,7 +23,7 @@ html {
 body {
   color: $fontColor;
   background: $backgroundColor;
-  font-family: $roboto;
+  font-family: $mainFontFamily;
   font-style: normal;
   font-weight: $regular;
   line-height: 1.42857143;

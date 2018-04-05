@@ -1,13 +1,15 @@
 import React from "react";
-import Link from "react-router-dom/Link";
+import { H1 } from "../../ui/atoms/Typography/Heading";
+import Paragraph from "../../ui/atoms/Typography/Paragraph";
+import Link from "../../ui/atoms/Typography/Link";
 
 export default () => (
   <div>
-    <h1>Oops! We have not found what you wanted</h1>
-    <p>Houston, we have a code 404…</p>
+    <H1>Oops! We have not found what you wanted</H1>
+    <Paragraph>Houston, we have a code 404…</Paragraph>
 
-    <p>
+    <Paragraph>
       Bring me <Link to="/">back to the safety zone</Link>
-    </p>
+    </Paragraph>
   </div>
 );

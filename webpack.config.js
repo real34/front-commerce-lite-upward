@@ -50,6 +50,28 @@ const universalRules = [
         }
       }
     ]
+  },
+  {
+    test: /\.svg$/,
+    oneOf: [
+      {
+        loader: "raw-loader",
+        resourceQuery: /inline/
+      },
+      {
+        loader: "file-loader",
+        query: {
+          name: "static/media/[name].[hash:8].[ext]"
+        }
+      }
+    ]
+  },
+  {
+    test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2)(\?.*)?$/,
+    loader: "file-loader",
+    query: {
+      name: "static/media/[name].[hash:8].[ext]"
+    }
   }
 ];
 
