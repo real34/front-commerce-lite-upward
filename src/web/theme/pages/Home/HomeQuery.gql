@@ -1,11 +1,11 @@
-#import "./CategoryFragment.gql"
-#import "./StoreNameFragment.gql"
+#import "../../modules/ProductList/ProductListFragment.gql"
+#import "../../modules/HomeBanner/HomeBannerFragment.gql"
 
-query HomeQuery($id: Int!, $params: QueryInput!) {
+query Home($id: Int!, $params: QueryInput!) {
   category(id: $id) {
-    ...CategoryFragment
+    ...ProductListFragment
   }
   store {
-    ...StoreInformationFragment
+    ...HomeBannerFragment
   }
 }
