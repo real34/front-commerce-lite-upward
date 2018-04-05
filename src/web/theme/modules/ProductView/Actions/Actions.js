@@ -4,7 +4,7 @@ import Button from "../../../ui/atoms/Button";
 const Actions = () => {
   return (
     <div className="product-actions">
-      <Button>add to cart</Button>
+      <Button>Add to cart</Button>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import Link from "../../ui/atoms/Typography/Link";
 const StoreDetails = ({ owner }) => (
   <div>
     <H2>Your contact today: {owner.displayName}</H2>
-    <img src={owner.picture} alt="" />
+    <img src={owner.picture} alt={owner.displayName} />
     <Paragraph>
       Email:{" "}
       <Link href={`mailto:${owner.email}`} external>
