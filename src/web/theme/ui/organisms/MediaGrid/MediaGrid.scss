@@ -1,0 +1,55 @@
+$baseMediaHeight: 15em;
+.media-grid {
+  /* Image ratios are 4/3 */
+  /* Main/Sibling size ratio is 1.62 (golden number) */
+  &__row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    &__main {
+      > * {
+        height: $baseMediaHeight * 2;
+      }
+    }
+
+    &__siblings {
+      display: flex;
+      flex-direction: row;
+      > * {
+        flex: 1;
+        height: $baseMediaHeight;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    max-height: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .media-grid {
+    &__row {
+      flex-direction: row;
+      height: $baseMediaHeight * 2;
+      max-width: $baseMediaHeight * 2 * 4 / 3 * 1.62;
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+
+      &__main {
+        width: 61.8%;
+      }
+
+      &__siblings {
+        width: 38.2%;
+        flex-direction: column;
+      }
+    }
+  }
+}

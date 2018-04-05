@@ -7,18 +7,19 @@ import Media from "../../ui/organisms/Media";
 
 const ProductItem = ({ name, prices, sku, imageUrl }) => {
   return (
-    <Link to={`product/${sku}`}>
-      <Media
-        media={<img src={createMediaUrlFromPath(imageUrl)} alt={name} />}
-        renderDetails={() => (
-          <Fragment>
+    <Media
+      to={`product/${sku}`}
+      media={<img src={createMediaUrlFromPath(imageUrl)} alt={name} />}
+      renderDetails={() => (
+        <Fragment>
+          <Link to={`product/${sku}`} type="reversed">
             {name}
-            <ProductPrice prices={prices} />
-            <Sku sku={sku} />
-          </Fragment>
-        )}
-      />
-    </Link>
+          </Link>
+          <ProductPrice prices={prices} />
+          <Sku sku={sku} />
+        </Fragment>
+      )}
+    />
   );
 };
 

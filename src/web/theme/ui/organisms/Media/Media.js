@@ -39,13 +39,17 @@ class Media extends Component {
         tabIndex="0"
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
-        onBlur={this.handleMouseEnter}
-        onFocus={this.handleMouseLeave}
+        onFocus={this.handleMouseEnter}
+        onBlur={this.handleMouseLeave}
       >
         {media}
-        {this.state.renderDetails ? (
-          <div className="media__details">{renderDetails()}</div>
-        ) : null}
+        <div
+          className={`media__details ${
+            this.state.renderDetails ? "media__details--opened" : ""
+          }`}
+        >
+          {renderDetails()}
+        </div>
       </div>
     );
   }
