@@ -1,8 +1,9 @@
 import React from "react";
+import logo from "./logo.svg";
 
 const Logo = () => (
   <span className="logo">
-    <img src="" alt="FC Lite" />
+    <img src={logo} alt="Front-Commerce" />
   </span>
 );
 
