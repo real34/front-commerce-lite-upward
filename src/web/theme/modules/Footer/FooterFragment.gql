@@ -1,0 +1,9 @@
+fragment FooterFragment on StoreInformation {
+  phone
+  owner {
+    gender
+    displayName
+    email
+    picture(size: large)
+  }
+}
