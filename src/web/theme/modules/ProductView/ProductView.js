@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Title from "./Title";
+import HeadingWithAddon from "../../ui/molecules/HeadingWithAddon";
 import Description from "./Description";
 import Actions from "./Actions";
 import Price from "../../ui/atoms/Typography/Price";
 
 const ProductView = ({ product }) => (
   <div className="product-view">
-    <Title sku={product.sku}>{product.name}</Title>
+    <HeadingWithAddon addon={product.sku}>{product.name}</HeadingWithAddon>
     <Price price={product.prices.finalPrice.priceInclTax} />
     <Actions product={product} />
     <Description>{product.description}</Description>
