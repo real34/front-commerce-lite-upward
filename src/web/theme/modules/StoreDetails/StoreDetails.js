@@ -10,7 +10,7 @@ const StoreDetails = ({ owner }) => (
     <img src={owner.picture} alt={owner.displayName} />
     <Paragraph>
       Email:{" "}
-      <Link href={`mailto:${owner.email}`} external>
+      <Link to={`mailto:${owner.email}`} external>
         {owner.email}
       </Link>
     </Paragraph>
