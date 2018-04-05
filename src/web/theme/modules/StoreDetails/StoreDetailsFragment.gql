@@ -1,0 +1,6 @@
+fragment StoreDetailsFragment on StoreOwner {
+  gender
+  displayName
+  email
+  picture(size: large)
+}

@@ -1,17 +1,13 @@
 import React from "react";
-import EnhanceLayout from "./EnhanceLayout";
-import Header from "../../../modules/Header";
-import Footer from "../../../modules/Footer";
-import LayoutQuery from "./LayoutQuery.gql";
 
-const Layout = ({ children, store }) => {
+const Layout = ({ children, header, footer }) => {
   return (
     <div className="container">
-      <Header />
+      {header}
       {children}
-      <Footer store={store} />
+      {footer}
     </div>
   );
 };
 
-export default EnhanceLayout(LayoutQuery)(Layout);
+export default Layout;

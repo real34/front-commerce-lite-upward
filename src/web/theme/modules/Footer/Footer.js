@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import StoreDetails from "../StoreDetails";
 import StoreContact from "../StoreContact";
+import EnhanceFooter from "./EnhanceFooter";
+import FooterQuery from "./FooterQuery.gql";
 
 const Footer = ({ store }) => {
   return (
@@ -18,4 +20,5 @@ Footer.propTypes = {
     phone: StoreContact.propTypes.phone
   })
 };
-export default Footer;
+
+export default EnhanceFooter(FooterQuery)(Footer);

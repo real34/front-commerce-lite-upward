@@ -1,9 +1,9 @@
+#import "../StoreDetails/StoreDetailsFragment.gql"
+#import "../StoreContact/StoreContactFragment.gql"
+
 fragment FooterFragment on StoreInformation {
-  phone
+  ...StoreContactFragment
   owner {
-    gender
-    displayName
-    email
-    picture(size: large)
+    ...StoreDetailsFragment
   }
 }

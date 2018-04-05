@@ -1,0 +1,7 @@
+#import "./FooterFragment.gql"
+
+query FooterQuery {
+  store {
+    ...FooterFragment
+  }
+}
