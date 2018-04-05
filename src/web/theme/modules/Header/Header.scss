@@ -2,11 +2,14 @@
   background: $brandPrimary;
   color: $reverseFontColor;
   text-align: center;
-  padding: 0.5em;
+  padding: 1em;
+  margin-bottom: 2em;
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 65em;
+    margin: 0 auto;
   }
 }

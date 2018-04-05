@@ -36,7 +36,7 @@ $baseMediaHeight: 15em;
     &__row {
       flex-direction: row;
       height: $baseMediaHeight * 2;
-      max-width: $baseMediaHeight * 2 * 4 / 3 * 1.62;
+      max-width: 65rem;
 
       &:nth-child(2n) {
         flex-direction: row-reverse;
