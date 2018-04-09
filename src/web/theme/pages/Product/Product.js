@@ -6,11 +6,11 @@ import withProps from "recompose/withProps";
 
 import EnhanceProduct from "./EnhanceProduct";
 import ProductQuery from "./ProductQuery.gql";
+import PageWithMedia from "theme/ui/templates/PageWithMedia";
 import ProductView from "../../modules/ProductView";
 import HeroImage from "../../modules/HeroImage";
 import LoadingArea from "../../ui/molecules/LoadingArea";
 import createMediaUrlFromPath from "../../../utils/createMediaUrlFromPath";
-import "./Product.scss";
 
 const Product = ({ loading, product }) => {
   if (loading) {
@@ -21,11 +21,15 @@ const Product = ({ loading, product }) => {
 
   return (
     <div className="page page--product">
-      <HeroImage
-        path={createMediaUrlFromPath(product.imageUrl)}
-        alt={product.name}
+      <PageWithMedia
+        media={
+          <HeroImage
+            path={createMediaUrlFromPath(product.imageUrl)}
+            alt={product.name}
+          />
+        }
+        content={<ProductView product={product} />}
       />
-      <ProductView product={product} />
     </div>
   );
 };

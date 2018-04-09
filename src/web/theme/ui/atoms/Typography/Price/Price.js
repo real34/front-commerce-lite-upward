@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Price.scss";
 
 const Price = ({ price: { includeTax, value } }) => {
   const price =

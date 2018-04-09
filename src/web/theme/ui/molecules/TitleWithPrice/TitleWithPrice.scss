@@ -1,0 +1,41 @@
+.title-with-price {
+  > h1 {
+    margin: 0 0 0.5rem 0;
+  }
+
+  > small {
+    color: $brandPrimary;
+    font-size: $normal;
+    font-weight: $bold;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .title-with-price {
+    > h1 {
+      margin: 0 0 1rem 0;
+    }
+
+    > small {
+      margin-top: 2rem;
+      font-size: $h1;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .title-with-price {
+    > h1 {
+      margin: 0 0 2rem 0;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .title-with-price {
+    > small {
+      margin-top: 2rem;
+      font-size: $mega;
+    }
+  }
+}
