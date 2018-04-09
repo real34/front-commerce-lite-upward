@@ -2,10 +2,15 @@
   background: $brandPrimary;
   color: $reverseFontColor;
   text-align: center;
+  height: 7em;
   padding: 1em;
   margin-bottom: 2em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 
   &__container {
+    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
