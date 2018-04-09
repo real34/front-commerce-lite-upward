@@ -5,24 +5,27 @@ import createMediaUrlFromPath from "../../../../utils/createMediaUrlFromPath";
 import Price from "../../../ui/atoms/Typography/Price";
 import RemoveCartItemMutation from "./RemoveCartItemMutation.gql";
 import Button from "../../../ui/atoms/Button";
+import RecapLineWithImage from "../../../ui/organisms/RecapLineWithImage";
 
 const CartItem = ({ imageUrl, name, qty, price, id, sku }) => {
   return (
     <Mutation mutation={RemoveCartItemMutation}>
       {removeFromCartMutation => (
-        <div className="cart__item">
-          <img src={createMediaUrlFromPath(imageUrl)} alt={name} />
-          {`${name} ${qty} ${price}`}
-          <Price price={price} />
-          <Button
-            onClick={e => {
-              e.preventDefault();
-              removeFromCartMutation({ variables: { item_id: id } });
-            }}
-          >
-            Remove from cart
-          </Button>
-        </div>
+        <RecapLineWithImage
+          image={<img src={createMediaUrlFromPath(imageUrl)} alt={name} />}
+          actions={
+            <Button
+              onClick={e => {
+                e.preventDefault();
+                removeFromCartMutation({ variables: { item_id: id } });
+              }}
+            >
+              Remove
+            </Button>
+          }
+          title={`${qty} × ${name}`}
+          price={price}
+        />
       )}
     </Mutation>
   );

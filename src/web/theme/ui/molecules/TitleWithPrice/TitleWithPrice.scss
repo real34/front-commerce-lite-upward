@@ -1,0 +1,8 @@
+.title-with-price {
+  &__price {
+    font-size: 0.7em;
+    display: block;
+    color: $brandPrimary;
+    font-weight: normal;
+  }
+}

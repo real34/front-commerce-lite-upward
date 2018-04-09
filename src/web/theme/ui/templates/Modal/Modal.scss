@@ -28,10 +28,12 @@
   right: 0;
   top: 0;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
   background: $white;
   width: 100%;
-  max-width: 30em;
+  max-width: 32em;
   cursor: default;
   transform: translate(100%, 0);
   transition: transform 0.2s ease-in-out;
@@ -55,6 +57,7 @@
   }
 
   &__content {
-    padding: 1em;
+    padding: 3em;
+    flex: 1;
   }
 }
