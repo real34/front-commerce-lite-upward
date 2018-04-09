@@ -3,7 +3,17 @@
   border: none;
   color: $fontSecondaryColor;
   font-weight: $bold;
-  font-size: $regularSize;
-  padding: 1.2em 2.5em;
+  font-size: $normal;
+  padding: 1.4em 3em;
   text-transform: uppercase;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $brandHoverPrimary;
+  }
+
+  &.invisible {
+    padding: 0;
+    background-color: inherit;
+  }
 }
