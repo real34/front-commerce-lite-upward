@@ -7,8 +7,11 @@ import Price from "../../ui/atoms/Typography/Price";
 
 const ProductView = ({ product }) => (
   <div className="product-view">
-    <HeadingWithAddon addon={product.sku}>{product.name}</HeadingWithAddon>
-    <Price price={product.prices.finalPrice.priceInclTax} />
+    <HeadingWithAddon
+      addon={<Price price={product.prices.finalPrice.priceInclTax} />}
+    >
+      {product.name}
+    </HeadingWithAddon>
     <Actions product={product} />
     <Description>{product.description}</Description>
   </div>

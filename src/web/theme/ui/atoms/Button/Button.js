@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Button.scss";
 
 const Button = ({ onClick, children, status, type }) => {
   return (
@@ -11,7 +12,7 @@ const Button = ({ onClick, children, status, type }) => {
             }
           : onClick
       }
-      className={status}
+      className={`button${status ? " " + status : ""}`}
       type={type}
     >
       {children}

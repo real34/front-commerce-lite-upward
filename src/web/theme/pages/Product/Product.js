@@ -9,6 +9,8 @@ import ProductQuery from "./ProductQuery.gql";
 import ProductView from "../../modules/ProductView";
 import HeroImage from "../../modules/HeroImage";
 import LoadingArea from "../../ui/molecules/LoadingArea";
+import createMediaUrlFromPath from "../../../utils/createMediaUrlFromPath";
+import "./Product.scss";
 
 const Product = ({ loading, product }) => {
   if (loading) {
@@ -19,8 +21,11 @@ const Product = ({ loading, product }) => {
 
   return (
     <div className="page page--product">
+      <HeroImage
+        path={createMediaUrlFromPath(product.imageUrl)}
+        alt={product.name}
+      />
       <ProductView product={product} />
-      <HeroImage path={product.imageUrl} alt={product.name} />
     </div>
   );
 };

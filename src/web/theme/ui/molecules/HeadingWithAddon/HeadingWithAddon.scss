@@ -1,10 +1,12 @@
 .heading-with-addon {
   text-align: center;
-  margin: 3em 1em;
+  margin: 3rem 1rem;
 
   > * {
     line-height: $giantSize;
+    margin: 0;
   }
+
   small {
     display: block;
     color: $fontColor;
