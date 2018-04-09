@@ -12,7 +12,7 @@ const Button = ({ onClick, children, status, type }) => {
             }
           : onClick
       }
-      className={`button${status ? " " + status : ""}`}
+      className={`button${type ? " " + type : ""}`}
       type={type}
     >
       {children}
@@ -24,7 +24,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
   status: PropTypes.string,
-  type: PropTypes.string
+  type: PropTypes.oneOf(["default", "invisible"])
 };
 
 export default Button;
