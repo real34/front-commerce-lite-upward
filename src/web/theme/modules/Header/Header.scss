@@ -12,3 +12,9 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (min-width: $largeDesktop) {
+  .header__container {
+    max-width: $largeDesktop;
+  }
+}
