@@ -32,8 +32,11 @@
     opacity: 0;
     transform: translate(0, 50%);
     transition: opacity 0.3s ease, transform 0.3s ease-in;
+  }
 
-    &--opened {
+  &:hover,
+  &:focus {
+    .media__details {
       opacity: 1;
       transform: none;
       transition: opacity 0.3s ease, transform 0.3s ease-out;
