@@ -5,16 +5,14 @@ $regular: 400;
 $semiBold: 500;
 $bold: 700;
 
-$tinySize: 0.7rem;
-$extraSmallSize: 0.8rem;
-$smallSize: 1rem;
-$mediumSize: 1.2rem;
-$regularSize: 1rem;
-$extraLargeSize: 2rem;
-$giantSize: 2.5rem;
+$normal: 1rem;
+$h2: 1.2rem;
+$h1: 1.5rem;
+$mega: 2rem;
+$giga: 3rem;
 
 html {
-  font-size: $regularSize;
+  font-size: $normal;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-size-adjust: 100%;
@@ -31,6 +29,18 @@ body {
 }
 
 h1 {
-  font-size: $giantSize;
-  color: $brandPrimary;
+  font-size: $h1;
+  color: $fontSecondaryColor;
+}
+
+@media screen and (min-width: $tablet) {
+  h1 {
+    font-size: $mega;
+  }
+}
+
+@media screen and (min-width: $largeDesktop) {
+  h1 {
+    font-size: $giga;
+  }
 }

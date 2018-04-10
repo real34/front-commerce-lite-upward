@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Button.scss";
 
 const Button = ({ onClick, children, status, type }) => {
   return (
@@ -11,7 +12,7 @@ const Button = ({ onClick, children, status, type }) => {
             }
           : onClick
       }
-      className={status}
+      className={`button${type ? " " + type : ""}`}
       type={type}
     >
       {children}
@@ -23,7 +24,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
   status: PropTypes.string,
-  type: PropTypes.string
+  type: PropTypes.oneOf(["default", "invisible"])
 };
 
 export default Button;

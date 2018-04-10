@@ -1,0 +1,43 @@
+.page-with-media {
+  display: flex;
+  flex-direction: column;
+
+  &__media {
+    text-align: center;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 3rem;
+    background-color: $white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .page-with-media {
+    flex-direction: row-reverse;
+    max-width: $desktop;
+    margin: auto;
+    padding: 0 3em;
+
+    &__media .icon {
+      display: none;
+    }
+
+    > * {
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (min-width: $largeDesktop) {
+  .page-with-media {
+    max-width: $largeDesktop;
+  }
+}

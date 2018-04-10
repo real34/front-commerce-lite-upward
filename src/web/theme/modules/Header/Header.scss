@@ -1,15 +1,20 @@
 .header {
-  background: $brandPrimary;
+  background: $brandPrimaryBackground;
   color: $reverseFontColor;
   text-align: center;
   padding: 1em;
-  margin-bottom: 2em;
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 65em;
+    max-width: $desktop;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: $largeDesktop) {
+  .header__container {
+    max-width: $largeDesktop;
   }
 }
