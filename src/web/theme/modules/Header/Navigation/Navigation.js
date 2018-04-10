@@ -9,7 +9,7 @@ const Navigation = () => {
         <li>
           <CartModal>
             {openCart => (
-              <Button type="link" onClick={openCart}>
+              <Button type="invisible" onClick={openCart}>
                 Cart
               </Button>
             )}

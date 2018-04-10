@@ -1,8 +1,40 @@
 .title-with-price {
-  &__price {
-    font-size: 0.7em;
+  > * {
+    margin: 0;
+  }
+
+  small {
     display: block;
     color: $brandPrimary;
+    font-size: 0.8em;
     font-weight: normal;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .title-with-price {
+    > * {
+      margin: 0;
+    }
+
+    small {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .title-with-price {
+    > * {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .title-with-price {
+    small {
+      margin-top: 1.5rem;
+    }
   }
 }

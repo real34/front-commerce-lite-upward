@@ -1,23 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { H3 } from "../../atoms/Typography/Heading";
-import Price from "../../atoms/Typography/Price";
+import Price from "theme/ui/atoms/Typography/Price";
+import { H1 } from "theme/ui/atoms/Typography/Heading";
 import "./TitleWithPrice.scss";
 
-const TitleWithPrice = ({ title, price, component = H3 }) => {
-  const Component = component || H3;
+const TitleWithPrice = ({ children, price }) => {
   return (
-    <Component>
-      {title}
-      <small className="title-with-price__price">
-        <Price price={price} />
-      </small>
-    </Component>
+    <div className="title-with-price">
+      <H1>
+        {children}
+        <small>
+          <Price price={price} />
+        </small>
+      </H1>
+    </div>
   );
 };
 
 TitleWithPrice.propTypes = {
-  title: PropTypes.number.isRequired,
+  children: PropTypes.node.isRequired,
   price: Price.propTypes.price,
   component: PropTypes.func
 };

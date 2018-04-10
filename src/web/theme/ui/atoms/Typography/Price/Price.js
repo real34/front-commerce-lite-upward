@@ -2,11 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Price = ({ price: { includeTax, value } }) => {
-  return (
-    <span className="price">
-      {value.amount === null ? "N/A" : `${value.amount} ${value.currency}`}
-    </span>
-  );
+  const price =
+    value.amount === null
+      ? "N/A"
+      : new Intl.NumberFormat("en-GB", {
+          style: "currency",
+          currency: value.currency
+        }).format(value.amount);
+
+  return <span className="price">{price}</span>;
 };
 
 Price.propTypes = {

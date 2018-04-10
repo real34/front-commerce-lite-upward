@@ -103,6 +103,11 @@ module.exports = [
       overlay: true,
       disableHostCheck: true,
       historyApiFallback: true
+    },
+    resolve: {
+      alias: {
+        theme: path.resolve(__dirname, "src/web/theme")
+      }
     }
   },
   {

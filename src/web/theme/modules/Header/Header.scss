@@ -1,10 +1,9 @@
 .header {
-  background: $brandPrimary;
+  background: $brandPrimaryBackground;
   color: $reverseFontColor;
   text-align: center;
   height: 7em;
   padding: 1em;
-  margin-bottom: 2em;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -14,7 +13,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 65em;
+    max-width: $desktop;
     margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    @include horizontal-spacing();
+  }
+}
+
+@media screen and (min-width: $largeDesktop) {
+  .header__container {
+    max-width: $largeDesktop;
   }
 }
