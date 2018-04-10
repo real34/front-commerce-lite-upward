@@ -105,7 +105,6 @@ module.exports = [
       historyApiFallback: true
     },
     resolve: {
-      extensions: [".js"],
       alias: {
         theme: path.resolve(__dirname, "src/web/theme")
       }

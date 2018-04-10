@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import Description from "./Description";
 import Actions from "./Actions";
 import TitleWithPrice from "theme/ui/molecules/TitleWithPrice";
-import "./ProductView.scss";
+import "./ProductSynthesis.scss";
 
-const ProductView = ({ product }) => (
+const ProductSynthesis = ({ product }) => (
   <div className="product-view">
     <div className="product-view__title">
       <TitleWithPrice price={product.prices.finalPrice.priceInclTax}>
@@ -17,7 +17,7 @@ const ProductView = ({ product }) => (
   </div>
 );
 
-ProductView.propTypes = {
+ProductSynthesis.propTypes = {
   product: PropTypes.shape({
     sku: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -25,4 +25,4 @@ ProductView.propTypes = {
     description: PropTypes.string
   })
 };
-export default ProductView;
+export default ProductSynthesis;

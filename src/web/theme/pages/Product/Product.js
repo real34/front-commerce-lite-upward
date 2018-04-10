@@ -7,7 +7,7 @@ import withProps from "recompose/withProps";
 import EnhanceProduct from "./EnhanceProduct";
 import ProductQuery from "./ProductQuery.gql";
 import PageWithMedia from "theme/ui/templates/PageWithMedia";
-import ProductView from "../../modules/ProductView";
+import ProductSynthesis from "../../modules/ProductSynthesis";
 import HeroImage from "../../modules/HeroImage";
 import LoadingArea from "../../ui/molecules/LoadingArea";
 import createMediaUrlFromPath from "../../../utils/createMediaUrlFromPath";
@@ -28,8 +28,9 @@ const Product = ({ loading, product }) => {
             alt={product.name}
           />
         }
-        content={<ProductView product={product} />}
-      />
+      >
+        <ProductSynthesis product={product} />
+      </PageWithMedia>
     </div>
   );
 };

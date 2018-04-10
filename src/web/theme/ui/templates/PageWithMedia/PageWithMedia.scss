@@ -5,16 +5,16 @@
   &__media {
     text-align: center;
     position: relative;
+  }
 
-    .icon {
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 1rem 3rem;
-      background-color: $white;
-      &:hover {
-        cursor: pointer;
-      }
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 3rem;
+    background-color: $white;
+    &:hover {
+      cursor: pointer;
     }
   }
 }

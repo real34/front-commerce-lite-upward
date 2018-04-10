@@ -4,7 +4,7 @@ import arrowLeft from "./arrow-left.svg?inline";
 const Icon = ({ icon }) => {
   if (icon === "arrow-left") {
     return (
-      <i
+      <span
         className="icon"
         dangerouslySetInnerHTML={{ __html: arrowLeft }}
         title="Go back"
