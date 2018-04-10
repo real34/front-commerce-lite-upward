@@ -1,7 +1,7 @@
 $verticalSpacing: 2rem;
 
 .product-view {
-  padding: $verticalSpacing 3rem;
+  padding: $verticalSpacing 0;
 
   &__title {
     text-align: center;
@@ -22,7 +22,7 @@ $verticalSpacing: 2rem;
 
     &__title {
       text-align: left;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
   }
 

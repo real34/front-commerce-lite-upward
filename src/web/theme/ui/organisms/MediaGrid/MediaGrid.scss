@@ -1,6 +1,7 @@
 $baseMediaHeight: 15em;
 .media-grid {
   margin-bottom: 2rem;
+  @include horizontal-spacing();
 
   /* Image ratios are 4/3 */
   /* Main/Sibling size ratio is 1.62 (golden number) */

@@ -2,7 +2,6 @@
   background: $brandPrimaryBackground;
   color: $reverseFontColor;
   text-align: center;
-  padding: 1em;
 
   &__container {
     display: flex;
@@ -10,6 +9,9 @@
     align-items: center;
     max-width: $desktop;
     margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    @include horizontal-spacing();
   }
 }
 

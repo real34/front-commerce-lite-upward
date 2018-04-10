@@ -1,6 +1,7 @@
 .heading-with-addon {
   text-align: center;
   margin: 3rem 1rem;
+  color: $brandPrimary;
 
   > * {
     margin: 0;
@@ -9,7 +10,5 @@
   small {
     display: block;
     color: $fontColor;
-    font-size: $h1;
-    margin-top: 1rem;
   }
 }

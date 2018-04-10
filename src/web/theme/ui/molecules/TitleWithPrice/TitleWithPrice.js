@@ -6,10 +6,12 @@ import "./TitleWithPrice.scss";
 const TitleWithPrice = ({ children, price }) => {
   return (
     <div className="title-with-price">
-      <H1>{children}</H1>
-      <small>
-        <Price price={price} />
-      </small>
+      <H1>
+        {children}
+        <small>
+          <Price price={price} />
+        </small>
+      </H1>
     </div>
   );
 };
