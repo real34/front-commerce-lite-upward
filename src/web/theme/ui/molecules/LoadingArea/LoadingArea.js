@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Spinner from "../../atoms/Spinner";
 import Paragraph from "../../atoms/Typography/Paragraph";
+import "./LoadingArea.scss";
 
 const LoadingArea = ({ children }) => {
   return (

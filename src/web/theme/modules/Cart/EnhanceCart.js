@@ -11,7 +11,7 @@ const fixture = {
       sku: "SH-Black-42",
       product: {
         imageUrl:
-          "https://demo.front-commerce.com/media/catalog/product/w/h/wh03-red_main.jpg"
+          "https://demo.front-commerce.com/media/catalog/product/b/l/black-led-shoes.jpg"
       },
       priceInfo: {
         rowTotalInclTax: {
@@ -31,7 +31,7 @@ const fixture = {
       sku: "SH-Black-42",
       product: {
         imageUrl:
-          "https://demo.front-commerce.com/media/catalog/product/w/h/wh03-red_main.jpg"
+          "https://demo.front-commerce.com/media/catalog/product/b/l/black-led-shoes.jpg"
       },
       priceInfo: {
         rowTotalInclTax: {

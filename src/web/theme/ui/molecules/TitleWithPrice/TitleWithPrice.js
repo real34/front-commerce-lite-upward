@@ -4,15 +4,16 @@ import Price from "theme/ui/atoms/Typography/Price";
 import { H1 } from "theme/ui/atoms/Typography/Heading";
 import "./TitleWithPrice.scss";
 
-const TitleWithPrice = ({ children, price }) => {
+const TitleWithPrice = ({ component = H1, children, price }) => {
+  const Component = component;
   return (
     <div className="title-with-price">
-      <H1>
+      <Component>
         {children}
         <small>
           <Price price={price} />
         </small>
-      </H1>
+      </Component>
     </div>
   );
 };

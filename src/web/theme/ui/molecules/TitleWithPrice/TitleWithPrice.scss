@@ -16,10 +16,6 @@
     > * {
       margin: 0;
     }
-
-    small {
-      margin-top: 1rem;
-    }
   }
 }
 
@@ -27,14 +23,6 @@
   .title-with-price {
     > * {
       margin: 0;
-    }
-  }
-}
-
-@media screen and (min-width: $desktop) {
-  .title-with-price {
-    small {
-      margin-top: 1.5rem;
     }
   }
 }

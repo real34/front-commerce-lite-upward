@@ -5,6 +5,7 @@ import createMediaUrlFromPath from "../../../../utils/createMediaUrlFromPath";
 import Price from "../../../ui/atoms/Typography/Price";
 import RemoveCartItemMutation from "./RemoveCartItemMutation.gql";
 import Button from "../../../ui/atoms/Button";
+import Icon from "../../../ui/atoms/Icon";
 import RecapLineWithImage from "../../../ui/organisms/RecapLineWithImage";
 
 const CartItem = ({ imageUrl, name, qty, price, id, sku }) => {
@@ -15,12 +16,13 @@ const CartItem = ({ imageUrl, name, qty, price, id, sku }) => {
           image={<img src={createMediaUrlFromPath(imageUrl)} alt={name} />}
           actions={
             <Button
+              type="invisible"
               onClick={e => {
                 e.preventDefault();
                 removeFromCartMutation({ variables: { item_id: id } });
               }}
             >
-              Remove
+              <Icon icon="trash" /> Remove
             </Button>
           }
           title={`${qty} × ${name}`}

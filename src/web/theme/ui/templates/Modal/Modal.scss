@@ -49,7 +49,9 @@
   &__header {
     background: $shade02;
     height: 7em;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    @include horizontal-spacing();
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -57,7 +59,9 @@
   }
 
   &__content {
-    padding: 3em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    @include horizontal-spacing();
     flex: 1;
   }
 }

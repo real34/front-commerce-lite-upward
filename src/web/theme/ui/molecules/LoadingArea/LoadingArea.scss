@@ -1,0 +1,6 @@
+.loading-area {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  @include horizontal-spacing();
+}

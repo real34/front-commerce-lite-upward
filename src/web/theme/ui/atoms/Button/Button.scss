@@ -7,6 +7,7 @@
   padding: 1.4em 3em;
   text-transform: uppercase;
   transition: all 0.2s;
+  cursor: pointer;
 
   &:hover {
     background-color: $brandHoverPrimary;
@@ -17,5 +18,11 @@
     background-color: inherit;
     text-transform: none;
     color: inherit;
+    font-weight: normal;
+  }
+
+  &.full-size {
+    width: 100%;
+    display: block;
   }
 }
