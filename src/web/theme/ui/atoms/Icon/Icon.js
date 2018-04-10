@@ -2,6 +2,7 @@ import React from "react";
 import arrowLeft from "./arrow-left.svg?inline";
 import close from "./close.svg?inline";
 import trash from "./trash.svg?inline";
+import cart from "./cart.svg?inline";
 import "./Icon.scss";
 
 const Icon = ({ icon }) => {
@@ -27,6 +28,14 @@ const Icon = ({ icon }) => {
       <span
         className="icon"
         dangerouslySetInnerHTML={{ __html: trash }}
+        aria-hidden={true}
+      />
+    );
+  } else if (icon === "cart") {
+    return (
+      <span
+        className="icon"
+        dangerouslySetInnerHTML={{ __html: cart }}
         aria-hidden={true}
       />
     );

@@ -12,8 +12,8 @@ const Recap = ({ children, total }) => {
 };
 
 Recap.propTypes = {
-  children: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired
+  children: PropTypes.node.isRequired,
+  total: PropTypes.node.isRequired
 };
 
 export default Recap;
