@@ -69,8 +69,40 @@ for more details.
 
 ## Philosophy
 
-We want you to understand the philosophy and the power of these technologies and
-architecture principles, and we think code is the best way to do it!
+We are on a mission to improve web quality and shopping experience on eCommerce
+stores. Hence
+[our vision](https://developers.front-commerce.com/docs/vision.html) is to sell
+a product that contains all the best practices for building qualitative online
+stores by default, so teams can stay focused on what is relevant to their
+context.
+
+One of the most frequent feedback we have from developers and teams when
+introducing Front-Commerce is:
+
+> Your product looks neat! Could we start playing with it, in order to (insert a
+> totally valid reason here)?
+
+We want you to understand the philosophy and the power of the technologies and
+architecture principles we chose. **In our opinion code is the best way to do
+it!**
+
+However, learning from the whole Front-Commerce codebase might be a daunting
+task for people not used to the JavaScript / React / GraphQL ecosystem. Since
+our goal is to take care of this complexity, we thought it would be better to
+create a simpler playground.
+
+Front-Commerce Lite is a simpler version of what we have developed. It uses the
+same libraries and follows the same principles and conventions. A direct
+consequence is that our documentation works for both Front-Commerce and
+Front-Commerce Lite.
+
+We made [some opinionated choices](#what-it-is-not) in order to keep things
+simple while allowing you to dig into the code and understand how everything
+work under the ground.
+
+Simple does not mean useless, and Front-Commerce Lite is aimed at helping teams
+to « build stuff » and move forward. Use it to learn, understand, prototype or
+sell Front-Commerce to your stakeholders!
 
 ## Get started
 
@@ -181,8 +213,8 @@ Here are the features we do not plan to add in Front-Commerce Lite:
 
 ## Going in production
 
-Did Front-Commerce Lite made you think that this stack is viable enough for your
-project? If yes, **we achieved our goal!**
+Convinced that Front-Commerce Lite’s stack is viable enough for your project? If
+yes, **we achieved our goal!**
 
 You now have several solutions:
 
@@ -194,8 +226,8 @@ You now have several solutions:
   the quality of their codebase
 * fork Front-Commerce Lite in the open, follow our philosophy and architecture…
   and name it React Storefront :)
-* **use [Front-Commerce](https://www.front-commerce.com/) and start developing
-  your features on top of a production ready solution right now!**
+* use [Front-Commerce](https://www.front-commerce.com/) and start developing
+  your features on top of a production ready solution **right now!**
 
 :email:
 [Contact our team to get further information and contract a Front-Commerce license.](mailto:contact@front-commerce.com)
