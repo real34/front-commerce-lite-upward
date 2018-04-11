@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Icon from "../../atoms/Icon";
+import Icon from "theme/ui/atoms/Icon";
 import "./IconWithLabel.scss";
 
 const IconWithLabel = ({ icon, children }) => {

@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import ProductPrice from "../../ui/molecules/ProductPrice";
+import ProductPrice from "theme/ui/molecules/ProductPrice";
 import createMediaUrlFromPath from "../../../utils/createMediaUrlFromPath";
-import Link from "../../ui/atoms/Typography/Link";
-import Media from "../../ui/organisms/Media";
+import Link from "theme/ui/atoms/Typography/Link";
+import Media from "theme/ui/organisms/Media";
 
 const ProductItem = ({ name, prices, sku, imageUrl }) => {
   return (

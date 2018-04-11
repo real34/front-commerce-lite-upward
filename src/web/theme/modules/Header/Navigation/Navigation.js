@@ -1,7 +1,7 @@
 import React from "react";
 import { CartModal } from "../../Cart";
-import Button from "../../../ui/atoms/Button";
-import IconWithLabel from "../../../ui/molecules/IconWithLabel";
+import Button from "theme/ui/atoms/Button";
+import IconWithLabel from "theme/ui/molecules/IconWithLabel";
 
 const Navigation = () => {
   return (

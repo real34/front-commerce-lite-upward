@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-import Modal from "../../ui/templates/Modal";
+import Modal from "theme/ui/templates/Modal";
 import Cart from "./Cart";
 
 class CartModal extends Component {

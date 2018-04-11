@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Mutation } from "react-apollo";
 import createMediaUrlFromPath from "../../../../utils/createMediaUrlFromPath";
-import Price from "../../../ui/atoms/Typography/Price";
+import Price from "theme/ui/atoms/Typography/Price";
 import RemoveCartItemMutation from "./RemoveCartItemMutation.gql";
-import Button from "../../../ui/atoms/Button";
-import Icon from "../../../ui/atoms/Icon";
-import RecapLineWithImage from "../../../ui/organisms/RecapLineWithImage";
+import Button from "theme/ui/atoms/Button";
+import Icon from "theme/ui/atoms/Icon";
+import RecapLineWithImage from "theme/ui/organisms/RecapLineWithImage";
 
 const CartItem = ({ imageUrl, name, qty, price, id, sku }) => {
   return (

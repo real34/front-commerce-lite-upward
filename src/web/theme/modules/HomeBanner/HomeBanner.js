@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import HeadingWithAddon from "../../ui/molecules/HeadingWithAddon";
+import HeadingWithAddon from "theme/ui/molecules/HeadingWithAddon";
 
 const HomeBanner = ({ storeName }) => {
   return (

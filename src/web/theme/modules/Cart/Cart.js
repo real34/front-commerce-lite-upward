@@ -8,11 +8,11 @@ import {
   ModalHeader,
   ModalContent,
   ModalAction
-} from "../../ui/templates/Modal";
-import Button from "../../ui/atoms/Button";
-import LoadingArea from "../../ui/molecules/LoadingArea";
-import Recap from "../../ui/organisms/Recap";
-import RecapTotal from "../../ui/organisms/RecapTotal";
+} from "theme/ui/templates/Modal";
+import Button from "theme/ui/atoms/Button";
+import LoadingArea from "theme/ui/molecules/LoadingArea";
+import Recap from "theme/ui/organisms/Recap";
+import RecapTotal from "theme/ui/organisms/RecapTotal";
 
 class Cart extends Component {
   constructor() {

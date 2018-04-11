@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ModalContext from "./ModalContext";
-import IconButton from "../../atoms/Icon/IconButton";
+import IconButton from "theme/ui/atoms/Icon/IconButton";
 
 const ModalHeader = props => {
   return (

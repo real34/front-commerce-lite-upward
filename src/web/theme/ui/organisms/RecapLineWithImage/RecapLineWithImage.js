@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { H3 } from "../../atoms/Typography/Heading";
-import TitleWithPrice from "../../molecules/TitleWithPrice";
+import { H3 } from "theme/ui/atoms/Typography/Heading";
+import TitleWithPrice from "theme/ui/molecules/TitleWithPrice";
 import "./RecapLineWithImage.scss";
 
 const RecapLineWithImage = ({ image, actions, title, price }) => {

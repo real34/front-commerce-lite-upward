@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Price from "../../atoms/Typography/Price";
+import Price from "theme/ui/atoms/Typography/Price";
 
 const ProductPrice = ({ prices, prefix }) => {
   if (!prices) {
