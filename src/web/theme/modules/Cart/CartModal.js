@@ -34,7 +34,7 @@ class CartModal extends Component {
           onRequestClose={this.handleCloseModal}
           contentLabel="Cart"
         >
-          <Cart />
+          <Cart onRequestClose={this.handleCloseModal} />
         </Modal>
       </Fragment>
     );

@@ -8,6 +8,7 @@ import Header from "./theme/modules/Header";
 import Footer from "./theme/modules/Footer";
 import Home from "./theme/pages/Home";
 import Product from "./theme/pages/Product";
+import Checkout from "./theme/pages/Checkout";
 import NotFound from "./theme/pages/NotFound";
 
 export default () => (
@@ -16,6 +17,7 @@ export default () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/product/:sku" component={Product} />
+        <Route path="/checkout" component={Checkout} />
 
         <Route component={NotFound} />
       </Switch>

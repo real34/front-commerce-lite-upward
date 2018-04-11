@@ -4,16 +4,17 @@ import EnhanceHome from "./EnhanceHome";
 import ProductList from "../../modules/ProductList";
 import HomeBanner from "../../modules/HomeBanner";
 import LoadingArea from "../../ui/molecules/LoadingArea";
+import Page from "../../ui/templates/Page";
 
 const Home = ({ store, category, loading }) => (
-  <div className="page page--home">
+  <Page>
     <HomeBanner storeName={store && store.name} />
     {loading ? (
       <LoadingArea>Loading products…</LoadingArea>
     ) : (
       <ProductList products={category.layer.products} />
     )}
-  </div>
+  </Page>
 );
 
 export default EnhanceHome(HomeQuery)(Home);

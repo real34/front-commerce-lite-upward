@@ -1,7 +1,6 @@
 $baseMediaHeight: 15em;
 .media-grid {
   margin-bottom: 2rem;
-  @include horizontal-spacing();
 
   /* Image ratios are 4/3 */
   /* Main/Sibling size ratio is 1.62 (golden number) */
@@ -39,7 +38,6 @@ $baseMediaHeight: 15em;
     &__row {
       flex-direction: row;
       height: $baseMediaHeight * 2;
-      max-width: $desktop;
 
       &:nth-child(2n) {
         flex-direction: row-reverse;

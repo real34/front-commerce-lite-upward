@@ -20,7 +20,7 @@ const Product = ({ loading, product }) => {
   }
 
   return (
-    <div className="page page--product">
+    <div>
       <PageWithMedia
         media={
           <HeroImage
