@@ -101,16 +101,33 @@ our side too.
 
 ## Get help
 
-Now that you have FCL setup………
+Now that you have Front-Commerce Lite installed, you can play and experiment
+with it. You can browse
+[Front-Commerce’s developer documentation](https://developers.front-commerce.com/docs/)
+to understand our implementation and architecture.
 
-Read the documentation. Here are some tasks you can try
+Here are some tasks you can try:
 
-Open issues if you need help (tag « Question »), or browse the answered
-questions
+* [Adapt the theme to your brand](https://developers.front-commerce.com/docs/adapt-theme-to-brand.html)
+* [Create or tweak a UI Component](https://developers.front-commerce.com/docs/create-a-ui-component.html)
+* [Create a new Page](https://developers.front-commerce.com/docs/create-custom-page.html)
+* [Extend the GraphQL schema](https://developers.front-commerce.com/docs/extend-graphql-schema.html)
+* [Create a Business Component](https://developers.front-commerce.com/docs/create-a-business-component.html)
 
-We have a slack
+If you need help we encourage you to search on the web first. It will help you
+to discover the community around each project. You might find additional
+resources for learning each library in-depth when you will be ready.
 
-And if you need anything else, send us an email!
+You can also open
+[issues](https://github.com/front-commerce/front-commerce-lite/issues) with the
+tag `« question »` and we will do our best to answer it. Of course, you can
+[browse answered questions](https://github.com/front-commerce/front-commerce-lite/issues?q=label%3Aquestion+is%3Aclosed)
+and try to help others by answering their opened questions.
+
+We have
+[a Slack chat](https://join.slack.com/t/front-commerce/shared_invite/enQtMzI2OTEyMDYzOTkxLWY0Y2JjYmRmNGQ2MWM1NzQyMjQwNzlmYzJmYzgzNTIwYzQ3MDVkMWZiYmYwNWFhODhmYWM5OTI4YjdiZDJkY2Q)
+that you can join to ask for help and if you need anything else,
+[send us an email!](mailto:contact@front-commerce.com)
 
 ## What it is **NOT**
 
