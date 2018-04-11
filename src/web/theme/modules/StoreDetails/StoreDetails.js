@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { H2 } from "../../ui/atoms/Typography/Heading";
-import Paragraph from "../../ui/atoms/Typography/Paragraph";
-import Link from "../../ui/atoms/Typography/Link";
+import { H2 } from "theme/ui/atoms/Typography/Heading";
+import Paragraph from "theme/ui/atoms/Typography/Paragraph";
+import Link from "theme/ui/atoms/Typography/Link";
 
 const StoreDetails = ({ owner }) => (
   <div>

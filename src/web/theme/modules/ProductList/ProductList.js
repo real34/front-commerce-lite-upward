@@ -1,6 +1,6 @@
 import React from "react";
 import ProductItem from "../ProductItem";
-import MediaGrid from "../../ui/organisms/MediaGrid";
+import MediaGrid from "theme/ui/organisms/MediaGrid";
 
 // We are using a specific JSX operator called the "spread" operator that will pass
 // all properties of the given "product" object as props to the ProductItem component

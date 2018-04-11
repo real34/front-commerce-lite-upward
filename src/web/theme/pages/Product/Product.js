@@ -7,9 +7,9 @@ import withProps from "recompose/withProps";
 import EnhanceProduct from "./EnhanceProduct";
 import ProductQuery from "./ProductQuery.gql";
 import PageWithMedia from "theme/ui/templates/PageWithMedia";
-import ProductSynthesis from "../../modules/ProductSynthesis";
-import HeroImage from "../../modules/HeroImage";
-import LoadingArea from "../../ui/molecules/LoadingArea";
+import ProductSynthesis from "theme/modules/ProductSynthesis";
+import HeroImage from "theme/modules/HeroImage";
+import LoadingArea from "theme/ui/molecules/LoadingArea";
 import createMediaUrlFromPath from "../../../utils/createMediaUrlFromPath";
 
 const Product = ({ loading, product }) => {
@@ -20,7 +20,7 @@ const Product = ({ loading, product }) => {
   }
 
   return (
-    <div className="page page--product">
+    <div>
       <PageWithMedia
         media={
           <HeroImage

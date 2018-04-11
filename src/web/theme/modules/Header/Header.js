@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
-import Link from "../../ui/atoms/Typography/Link";
-import Logo from "../../ui/atoms/Logo";
+import Link from "theme/ui/atoms/Typography/Link";
+import Logo from "theme/ui/atoms/Logo";
 import "./Header.scss";
 
 const Header = () => {

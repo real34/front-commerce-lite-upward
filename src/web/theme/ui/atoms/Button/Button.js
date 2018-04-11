@@ -24,7 +24,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
   status: PropTypes.string,
-  type: PropTypes.oneOf(["default", "invisible"])
+  type: PropTypes.oneOf(["default", "invisible", "full-size"])
 };
 
 export default Button;

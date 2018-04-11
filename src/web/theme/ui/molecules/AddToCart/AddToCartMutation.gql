@@ -1,4 +1,4 @@
-#import "../../../modules/Cart/CartFragment.gql"
+#import "theme/modules/Cart/CartFragment.gql"
 
 mutation addItemToCart($sku: String!) {
   addItemToCart(sku: $sku) {

@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Mutation } from "react-apollo";
-import Button from "../../atoms/Button";
+import Button from "theme/ui/atoms/Button";
 import AddToCartMutation from "./AddToCartMutation.gql";
 
 const AddToCart = ({ children, sku }) => {
@@ -18,6 +19,11 @@ const AddToCart = ({ children, sku }) => {
       )}
     </Mutation>
   );
+};
+
+AddToCart.propTypes = {
+  children: PropTypes.node.isRequired,
+  sku: PropTypes.string.isRequired
 };
 
 export default AddToCart;
