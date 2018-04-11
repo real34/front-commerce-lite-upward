@@ -109,7 +109,7 @@ Start building something now!
 If you already are familiar to the JavaScript ecosystem, the following steps are
 all you need. Otherwise, jump to the next section.
 
-1.  `git clone`
+1.  `git clone git@github.com:front-commerce/front-commerce-lite.git`
 2.  `cd front-commerce-lite && npm install`
 3.  `npm start`
 4.  open your favorite editor and start coding!
