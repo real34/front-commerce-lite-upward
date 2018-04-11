@@ -1,4 +1,4 @@
-#import "../../modules/ProductItem/ProductItemFragment.gql"
+#import "theme/modules/ProductItem/ProductItemFragment.gql"
 
 fragment ProductListFragment on CategoryType {
   name

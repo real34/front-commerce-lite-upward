@@ -1,0 +1,28 @@
+.button {
+  background-color: $brandPrimary;
+  border: none;
+  color: $fontSecondaryColor;
+  font-weight: $bold;
+  font-size: $normal;
+  padding: 1.4em 3em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $brandHoverPrimary;
+  }
+
+  &.invisible {
+    padding: 0;
+    background-color: inherit;
+    text-transform: none;
+    color: inherit;
+    font-weight: normal;
+  }
+
+  &.full-size {
+    width: 100%;
+    display: block;
+  }
+}

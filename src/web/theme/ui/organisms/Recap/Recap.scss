@@ -1,0 +1,16 @@
+.recap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  &__result {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}

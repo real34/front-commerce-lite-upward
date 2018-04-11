@@ -1,0 +1,10 @@
+@mixin horizontal-spacing() {
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

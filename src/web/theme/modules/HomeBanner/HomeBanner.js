@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { H1 } from "../../ui/atoms/Typography/Heading";
+import HeadingWithAddon from "theme/ui/molecules/HeadingWithAddon";
 
 const HomeBanner = ({ storeName }) => {
   return (
-    <div className="home-banner">
-      <H1>{storeName ? `Welcome on ${storeName}` : "Welcome"}</H1>
-    </div>
+    <HeadingWithAddon addon="A light overview of Front-Commerce's features">
+      {storeName ? `Welcome on ${storeName}` : "Welcome"}
+    </HeadingWithAddon>
   );
 };
 

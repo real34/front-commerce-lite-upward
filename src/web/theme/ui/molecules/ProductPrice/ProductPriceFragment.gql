@@ -1,4 +1,4 @@
-#import "../../atoms/Typography/Price/PriceFragment.gql"
+#import "theme/ui/atoms/Typography/Price/PriceFragment.gql"
 
 fragment ProductPriceFragment on ProductType {
   prices {

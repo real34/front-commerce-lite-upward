@@ -5,16 +5,14 @@ $regular: 400;
 $semiBold: 500;
 $bold: 700;
 
-$tinySize: 0.7em;
-$extraSmallSize: 0.8em;
-$smallSize: 1em;
-$mediumSize: 1.2em;
-$regularSize: 1em;
-$extraLargeSize: 2em;
-$giantSize: 2.5em;
+$normal: 1rem;
+$h2: 1.2rem;
+$h1: 1.5rem;
+$mega: 2rem;
+$giga: 3rem;
 
 html {
-  font-size: $regularSize;
+  font-size: $normal;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-size-adjust: 100%;
@@ -28,4 +26,24 @@ body {
   font-weight: $regular;
   line-height: 1.42857143;
   margin: 0;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+@media screen and (min-width: $tablet) {
+  h1 {
+    font-size: $mega;
+  }
+}
+
+@media screen and (min-width: $largeDesktop) {
+  h1 {
+    font-size: $giga;
+  }
+}
+
+h3 {
+  font-size: 1.3rem;
 }

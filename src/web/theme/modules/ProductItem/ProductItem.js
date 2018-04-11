@@ -1,19 +1,23 @@
-import React from "react";
-import ProductPrice from "../../ui/molecules/ProductPrice";
-import Sku from "../../ui/atoms/Typography/Sku";
+import React, { Fragment } from "react";
+import ProductPrice from "theme/ui/molecules/ProductPrice";
 import createMediaUrlFromPath from "../../../utils/createMediaUrlFromPath";
-import Link from "../../ui/atoms/Typography/Link";
+import Link from "theme/ui/atoms/Typography/Link";
+import Media from "theme/ui/organisms/Media";
 
 const ProductItem = ({ name, prices, sku, imageUrl }) => {
   return (
-    <div className="product-item">
-      <Link to={`product/${sku}`}>
-        <img src={createMediaUrlFromPath(imageUrl)} alt={name} />
-        {name}
-        <ProductPrice prices={prices} />
-        <Sku sku={sku} />
-      </Link>
-    </div>
+    <Media
+      to={`product/${sku}`}
+      media={<img src={createMediaUrlFromPath(imageUrl)} alt={name} />}
+      renderDetails={() => (
+        <Fragment>
+          <Link to={`product/${sku}`} type="reversed">
+            {name}
+          </Link>
+          <ProductPrice prices={prices} />
+        </Fragment>
+      )}
+    />
   );
 };
 
