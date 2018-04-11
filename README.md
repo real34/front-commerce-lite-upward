@@ -35,11 +35,7 @@ Start learning, experiment an idea with your team, convince your boss or win
 projects by building a <abbr title="Proof of Concept">PoC</abbr>. This is what
 Front-Commerce Lite can help you with!
 
-<p align="center">
-  <img width="96%"
-    src="./screenshot.jpg"
-    alt="The default Front-Commerce Lite home page" />
-</p>
+![The default Front-Commerce Lite home page](./screenshot.jpg)
 
 ## Features
 
@@ -190,9 +186,9 @@ Here are the features we do not plan to add in Front-Commerce Lite:
   maintain it yourself (it is a great way to learn)
 * **deployment recipes:** if you want to share your project with the world, you
   will have to create your own deployments for your hosting provider of choice
-* **performance optimization:** GraphQL resolvers in Front-Commerce are using
-  the [Dataloader pattern](https://github.com/facebook/dataloader) with caching
-  to improve performance with slow backends. We do not want to introduce this
+* **performance optimization:** GraphQL resolvers in Front-Commerce use the
+  [DataLoader pattern](https://github.com/facebook/dataloader) with caching to
+  improve performance with slow backends. We do not want to introduce this
   complexity here.
 * **refactorings or library upgrades** that do not match what is available in
   Front-Commerce: **we do not want to lie to you about Front-Commerce’s state**,
