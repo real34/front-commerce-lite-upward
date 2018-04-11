@@ -1,8 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Price from "../../atoms/Typography/Price";
 import "./RecapTotal.scss";
 
-const RecapTotal = ({ image, actions, title, price }) => {
+const RecapTotal = ({ title, price }) => {
   return (
     <div className="recap-total">
       <div className="recap-total__title">{title}</div>
@@ -11,6 +12,11 @@ const RecapTotal = ({ image, actions, title, price }) => {
       </div>
     </div>
   );
+};
+
+RecapTotal.propTypes = {
+  title: PropTypes.node.isRequired,
+  price: Price.propTypes.price
 };
 
 export default RecapTotal;

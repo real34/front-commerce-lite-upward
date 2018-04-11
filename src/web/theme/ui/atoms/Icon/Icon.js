@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import arrowLeft from "./arrow-left.svg?inline";
 import close from "./close.svg?inline";
 import trash from "./trash.svg?inline";
@@ -41,7 +42,11 @@ const Icon = ({ icon }) => {
     );
   }
 
-  return <span className={`icon fa fa-${icon}`} />;
+  return icon;
+};
+
+Icon.propTypes = {
+  icon: PropTypes.oneOf(["arrow-left", "close", "trash", "cart"]).isRequired
 };
 
 export default Icon;

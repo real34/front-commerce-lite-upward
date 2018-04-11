@@ -19,4 +19,6 @@ const Modal = props => {
   );
 };
 
+Modal.propTypes = ReactModal.propTypes;
+
 export default Modal;

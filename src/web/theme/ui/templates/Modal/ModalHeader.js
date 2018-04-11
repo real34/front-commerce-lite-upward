@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ModalContext from "./ModalContext";
 import IconButton from "../../atoms/Icon/IconButton";
 
@@ -15,6 +16,10 @@ const ModalHeader = props => {
       </ModalContext.Consumer>
     </div>
   );
+};
+
+ModalHeader.propTypes = {
+  children: PropTypes.node.isRequired
 };
 
 export default ModalHeader;
