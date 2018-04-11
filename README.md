@@ -37,7 +37,7 @@ Front-Commerce Lite can help you with!
 
 <p align="center">
   <img width="96%"
-    src="https://via.placeholder.com/800x400"
+    src="./screenshot.jpg"
     alt="The default Front-Commerce Lite home page" />
 </p>
 
