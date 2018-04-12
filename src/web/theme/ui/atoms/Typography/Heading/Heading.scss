@@ -1,0 +1,19 @@
+h1 {
+  font-size: $h1;
+}
+
+@media screen and (min-width: $tablet) {
+  h1 {
+    font-size: $mega;
+  }
+}
+
+@media screen and (min-width: $largeDesktop) {
+  h1 {
+    font-size: $giga;
+  }
+}
+
+h3 {
+  font-size: 1.3rem;
+}

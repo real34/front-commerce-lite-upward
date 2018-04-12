@@ -1,4 +1,5 @@
 import React from "react";
+import "./Layout.scss";
 
 const Layout = ({ children, header, footer }) => {
   return (
