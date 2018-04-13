@@ -28,12 +28,16 @@ eCommerce stores backed by existing headless platforms such as Magento2.
 ## Overview
 
 Front-Commerce Lite contains everything you need to get started in minutes with
-all the libraries used in Front-Commerce. Consider it as a boilerplate for
+the main libraries used in Front-Commerce. Consider it as a boilerplate for
 prototyping an eCommerce application.
 
-Start learning, experiment an idea with your team, convince your boss or win
-projects by building a <abbr title="Proof of Concept">PoC</abbr>. This is what
-Front-Commerce Lite can help you with!
+Here is what Front-Commerce Lite can help you with:
+
+* start learning new technologies and concepts,
+* experiment an idea with your team,
+* evaluate Front-Commerce,
+* convince your boss,
+* or win projects by building a <abbr title="Proof of Concept">PoC</abbr>.
 
 ![The default Front-Commerce Lite home page](./screenshot.jpg)
 
@@ -94,7 +98,7 @@ Front-Commerce Lite.
 
 We made [some opinionated choices](#what-it-is-not) in order to keep things
 simple while allowing you to dig into the code and understand how everything
-work under the ground.
+works under the hood.
 
 Simple does not mean useless, and Front-Commerce Lite is aimed at helping teams
 to « build stuff » and move forward. Use it to learn, understand, prototype or
@@ -106,8 +110,8 @@ Start building something now!
 
 ### TL;DR
 
-If you already are familiar to the JavaScript ecosystem, the following steps are
-all you need. Otherwise, jump to the next section.
+The following steps are all you need if you already are familiar with the
+JavaScript ecosystem. Otherwise, jump to the next section.
 
 1.  `git clone git@github.com:front-commerce/front-commerce-lite.git`
 2.  `cd front-commerce-lite && npm install`
@@ -143,8 +147,8 @@ Here are some tasks you can try:
 * [Create a Business Component](https://developers.front-commerce.com/docs/create-a-business-component.html)
 
 If you need help we encourage you to search on the web first. It will help you
-to discover the community around each project. You might find additional
-resources for learning each library in-depth when you will be ready.
+discover the community around each project. You might find additional resources
+for learning each library in-depth when you will be ready.
 
 You can also open
 [issues](https://github.com/front-commerce/front-commerce-lite/issues) with the
@@ -153,7 +157,7 @@ tag `« question »` and we will do our best to answer it. Of course, you can
 and try to help others by answering their opened questions.
 
 We have
-[a Slack chat](https://join.slack.com/t/front-commerce/shared_invite/enQtMzI2OTEyMDYzOTkxLWY0Y2JjYmRmNGQ2MWM1NzQyMjQwNzlmYzJmYzgzNTIwYzQ3MDVkMWZiYmYwNWFhODhmYWM5OTI4YjdiZDJkY2Q)
+[a Slack channnel](https://join.slack.com/t/front-commerce/shared_invite/enQtMzI2OTEyMDYzOTkxLWY0Y2JjYmRmNGQ2MWM1NzQyMjQwNzlmYzJmYzgzNTIwYzQ3MDVkMWZiYmYwNWFhODhmYWM5OTI4YjdiZDJkY2Q)
 that you can join to ask for help and if you need anything else,
 [send us an email!](mailto:contact@front-commerce.com)
 
@@ -178,7 +182,7 @@ Here are the features we do not plan to add in Front-Commerce Lite:
   please refer to
   [Front-Commerce’s public demo](https://demo.front-commerce.com/).
 * **complete eCommerce pages:** we will try to keep the number of pages and
-  components as minimal as possible to make it easier to get the whole picture.
+  components as minimal as possible to make it easier to see the whole picture.
   Our goal is to showcase possible use cases. In a real project, you will have
   more pages (account, forgotten password, contact page…) to manage
 * **optimized production builds:** the tooling is for a development context
@@ -214,12 +218,11 @@ yes, **we achieved our goal!**
 
 You now have several solutions:
 
-* learn each one of the technologies, start a project from scratch and spend the
-  next years building your eCommerce store (if your needs are very simple it
-  could be a solution)
-* compare with existing alternatives and choose the one which fit your needs and
-  budget: features, architecture, test coverage and (if they are open source)
-  the quality of their codebase
+* start a project from scratch using these technologies. If your needs are
+  simple it could be a solution, otherwise prepare yourself to months of work!
+* compare with existing alternatives and choose the one which fits your needs
+  and budget: features, architecture, test coverage and (if they are open
+  source) the quality of their codebase
 * fork Front-Commerce Lite in the open, follow our philosophy and architecture…
   and name it React Storefront :)
 * use [Front-Commerce](https://www.front-commerce.com/) and start developing
