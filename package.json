@@ -38,7 +38,6 @@
     "file-loader": "^1.1.11",
     "graphql": "^0.13.2",
     "graphql-tools": "^2.23.1",
-    "lodash": "^4.17.5",
     "node-fetch": "^2.1.2",
     "raw-loader": "^0.5.1",
     "react": "^16.3.1",
