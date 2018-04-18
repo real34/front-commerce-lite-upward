@@ -1,10 +1,13 @@
+$baseMediaHeight: 15rem;
+$mediaSpacing: 2rem;
+
 .media-grid {
   display: grid;
-  margin-bottom: 2rem;
+  margin-bottom: $mediaSpacing;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  grid-auto-rows: 13em;
+  grid-column-gap: $mediaSpacing;
+  grid-row-gap: $mediaSpacing;
+  grid-auto-rows: $baseMediaHeight - $mediaSpacing;
 
   .media {
     &:nth-child(3n + 1) {
