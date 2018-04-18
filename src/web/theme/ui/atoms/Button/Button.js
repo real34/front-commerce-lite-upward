@@ -15,7 +15,7 @@ const Button = ({ onClick, children, status, type }) => {
       className={`button${type ? " " + type : ""}`}
       type={type}
     >
-      {children}
+      {status === "loading" ? "…" : children}
     </button>
   );
 };
