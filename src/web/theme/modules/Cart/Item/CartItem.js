@@ -35,7 +35,7 @@ const CartItem = ({ imageUrl, name, qty, price, id, sku }) => {
 
 CartItem.propTypes = {
   name: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   sku: PropTypes.string.isRequired,
   imageUrl: PropTypes.string,
   qty: PropTypes.number,
