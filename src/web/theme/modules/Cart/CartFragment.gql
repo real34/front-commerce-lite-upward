@@ -1,7 +1,7 @@
 #import "theme/ui/atoms/Typography/Price/PriceFragment.gql"
 #import "./Item/CartItemFragment.gql"
 
-fragment CartFragment on CartType {
+fragment CartFragment on Cart {
   id
   items_qty
   items {
