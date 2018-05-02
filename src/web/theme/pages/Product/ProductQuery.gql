@@ -1,6 +1,6 @@
 #import "theme/ui/atoms/Typography/Price/PriceFragment.gql"
 
-fragment Product on ProductType {
+fragment Product on Product {
   sku
   name
   imageUrl

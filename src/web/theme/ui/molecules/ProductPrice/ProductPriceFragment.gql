@@ -1,6 +1,6 @@
 #import "theme/ui/atoms/Typography/Price/PriceFragment.gql"
 
-fragment ProductPriceFragment on ProductType {
+fragment ProductPriceFragment on Product {
   prices {
     finalPrice {
       priceInclTax {
