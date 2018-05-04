@@ -23,7 +23,7 @@ const universalRules = [
     use: {
       loader: "babel-loader",
       options: {
-        presets: ["@babel/preset-env", "@babel/react"]
+        presets: ["@babel/preset-env", "@babel/react", "@babel/preset-stage-0"]
       }
     }
   },
