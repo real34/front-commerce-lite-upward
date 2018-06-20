@@ -12,3 +12,15 @@ services:
     command: start
     entrypoint: npm
     working_dir: /project
+
+  styleguide:
+    image: node:8.10.0
+    network_mode: "bridge"
+    ports:
+      - "9001:9001"
+    volumes:
+      - ./:/project
+      - ~/.npm:/root/.npm
+    command: run storybook
+    entrypoint: npm
+    working_dir: /project
