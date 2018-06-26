@@ -23,7 +23,16 @@ const universalRules = [
     use: {
       loader: "babel-loader",
       options: {
-        presets: ["react-app"]
+        presets: [
+          "@babel/preset-env",
+          "@babel/react",
+          [
+            "@babel/preset-stage-0",
+            {
+              decoratorsLegacy: true
+            }
+          ]
+        ]
       }
     }
   },
