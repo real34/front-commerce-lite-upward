@@ -2,8 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const NodeExternals = require("webpack-node-externals");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 const sass = {
   globalsImportStatements: '@import "globals.scss";',
@@ -100,7 +98,12 @@ module.exports = [
       new HtmlWebpackPlugin({
         template: "src/index.html"
       }),
-      new webpack.NamedModulesPlugin()
+      new webpack.NamedModulesPlugin(),
+      new webpack.DefinePlugin({
+        "process.env": {
+          BACKEND_URL: JSON.stringify(process.env.BACKEND_URL)
+        }
+      })
     ],
     module: {
       rules: [...universalRules]
