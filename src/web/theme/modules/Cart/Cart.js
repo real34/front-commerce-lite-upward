@@ -11,6 +11,7 @@ import {
 } from "theme/ui/templates/Modal";
 import Button from "theme/ui/atoms/Button";
 import LoadingArea from "theme/ui/molecules/LoadingArea";
+import Loading from "theme/ui/atoms/Loading";
 import Recap from "theme/ui/organisms/Recap";
 import RecapTotal from "theme/ui/organisms/RecapTotal";
 
@@ -33,7 +34,9 @@ class Cart extends Component {
         <Fragment>
           <ModalHeader>My Cart</ModalHeader>
           <ModalContent>
-            <LoadingArea>Loading…</LoadingArea>
+            <LoadingArea>
+              <Loading />
+            </LoadingArea>
           </ModalContent>
         </Fragment>
       );
