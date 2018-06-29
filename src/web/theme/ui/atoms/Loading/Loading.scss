@@ -13,12 +13,10 @@
     top: 0;
     left: 0;
 
-    -webkit-animation: cubemove 1.8s infinite ease-in-out;
     animation: cubemove 1.8s infinite ease-in-out;
   }
 
   &__cube2 {
-    -webkit-animation-delay: -0.9s;
     animation-delay: -0.9s;
   }
 }
