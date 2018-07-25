@@ -10,11 +10,16 @@ import PageWithMedia from "theme/ui/templates/PageWithMedia";
 import ProductSynthesis from "theme/modules/ProductSynthesis";
 import HeroImage from "theme/modules/HeroImage";
 import LoadingArea from "theme/ui/molecules/LoadingArea";
+import Loading from "theme/ui/atoms/Loading";
 import createMediaUrlFromPath from "../../../utils/createMediaUrlFromPath";
 
 const Product = ({ loading, product }) => {
   if (loading) {
-    return <LoadingArea>Loading…</LoadingArea>;
+    return (
+      <LoadingArea>
+        <Loading />
+      </LoadingArea>
+    );
   } else if (!product) {
     return <Redirect to="/not-found" />;
   }

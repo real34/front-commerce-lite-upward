@@ -3,4 +3,9 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   @include horizontal-spacing();
+  & > p {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+  }
 }
