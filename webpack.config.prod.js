@@ -23,16 +23,7 @@ const universalRules = [
     use: {
       loader: "babel-loader",
       options: {
-        presets: [
-          "@babel/preset-env",
-          "@babel/react",
-          [
-            "@babel/preset-stage-0",
-            {
-              decoratorsLegacy: true
-            }
-          ]
-        ]
+        presets: ["@babel/react"]
       }
     }
   },
@@ -40,6 +31,11 @@ const universalRules = [
     test: /\.(graphql|gql)$/,
     include: [srcPath],
     loader: "graphql-tag/loader"
+  },
+  {
+    test: /\.mjs$/,
+    include: /node_modules/,
+    type: "javascript/auto"
   },
   {
     test: /\.scss$/,

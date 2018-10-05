@@ -33,6 +33,11 @@ const universalRules = [
     loader: "graphql-tag/loader"
   },
   {
+    test: /\.mjs$/,
+    include: /node_modules/,
+    type: "javascript/auto"
+  },
+  {
     test: /\.scss$/,
     include: [srcPath],
     use: [
