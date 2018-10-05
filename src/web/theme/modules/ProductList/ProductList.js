@@ -8,7 +8,9 @@ import MediaGrid from "theme/ui/organisms/MediaGrid";
 const ProductList = ({ products }) => {
   return (
     <MediaGrid>
-      {products.map(product => <ProductItem key={product.sku} {...product} />)}
+      {products.map(product => (
+        <ProductItem key={product.sku} {...product} />
+      ))}
     </MediaGrid>
   );
 };
