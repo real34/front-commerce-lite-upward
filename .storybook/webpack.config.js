@@ -14,9 +14,14 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["react-app"]
+            presets: ["@babel/react"]
           }
         }
+      },
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: "javascript/auto"
       },
       {
         test: /\.scss$/,
