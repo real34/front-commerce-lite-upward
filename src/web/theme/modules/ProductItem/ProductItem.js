@@ -7,7 +7,6 @@ import Media from "theme/ui/organisms/Media";
 const ProductItem = ({ name, prices, sku, imageUrl }) => {
   return (
     <Media
-      to={`product/${sku}`}
       media={<img src={createMediaUrlFromPath(imageUrl)} alt={name} />}
       renderDetails={() => (
         <Fragment>
