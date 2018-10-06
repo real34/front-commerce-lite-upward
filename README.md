@@ -115,7 +115,7 @@ JavaScript ecosystem. Otherwise, jump to the next section.
 
 1.  `git clone git@github.com:front-commerce/front-commerce-lite.git`
 2.  `cd front-commerce-lite && npm install`
-3.  `npm start`
+3.  `npm start` for the web application, and `npm run storybook` for Storybook
 4.  open your favorite editor and start coding!
 
 ### Step by step
