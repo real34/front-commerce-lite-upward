@@ -13,7 +13,9 @@ const Footer = () => {
       {/*store && store.owner && <StoreDetails owner={store.owner} />}
       {store && store.phone && <StoreContact phone={store.phone} />*/}
       Made with ❤️ by the{" "}
-      <Link to="https://www.front-commerce.com">Front-Commerce team</Link>
+      <Link to="https://www.front-commerce.com" external>
+        Front-Commerce team
+      </Link>
     </footer>
   );
 };
