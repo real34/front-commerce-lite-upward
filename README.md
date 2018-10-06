@@ -25,6 +25,10 @@ eCommerce stores backed by existing headless platforms such as Magento2.
 
 </div>
 
+## Live Demo
+
+The main branch is deployed continuously at [https://front-commerce-lite-upward.now.sh/](https://front-commerce-lite-upward.now.sh/)
+
 ## Overview
 
 Front-Commerce Lite contains everything you need to get started in minutes with
