@@ -33,30 +33,30 @@ prototyping an eCommerce application.
 
 Here is what Front-Commerce Lite can help you with:
 
-* start learning new technologies and concepts,
-* experiment an idea with your team,
-* evaluate Front-Commerce,
-* convince your boss,
-* or win projects by building a <abbr title="Proof of Concept">PoC</abbr>.
+- start learning new technologies and concepts,
+- experiment an idea with your team,
+- evaluate Front-Commerce,
+- convince your boss,
+- or win projects by building a <abbr title="Proof of Concept">PoC</abbr>.
 
 ![The default Front-Commerce Lite home page](./screenshot.jpg)
 
 ## Features
 
-* **zero configuration:** start developing right away, all the tooling is
+- **zero configuration:** start developing right away, all the tooling is
   already configured for you
-* **great developer experience:** get in the flow with immediate feedback and
+- **great developer experience:** get in the flow with immediate feedback and
   interactive tools (<abbr title="Hot Module Reloading">HMR</abbr>,
   [GraphiQL](https://github.com/graphql/graphiql) and
   [Storybook](https://storybook.js.org/))
-* **up-to-date libraries:** webpack, react, apollo, react-router… experiment
+- **up-to-date libraries:** webpack, react, apollo, react-router… experiment
   with their latest features
-* **microservices friendly:** understand the power of a GraphQL middleware for
+- **microservices friendly:** understand the power of a GraphQL middleware for
   your microservices and start combining them in a creative way
-* **component based:** browse our sample components to understand
+- **component based:** browse our sample components to understand
   Front-Commerce’s implementation of
   [Atomic Design](http://atomicdesign.bradfrost.com/)
-* **living design system:** discuss with your team and UX designers about how a
+- **living design system:** discuss with your team and UX designers about how a
   Design System could improve your workflow, and test this process on a
   prototype built with Front-Commerce Lite
 
@@ -140,11 +140,11 @@ to understand our implementation and architecture.
 
 Here are some tasks you can try:
 
-* [Adapt the theme to your brand](https://developers.front-commerce.com/docs/adapt-theme-to-brand.html)
-* [Create or tweak a UI Component](https://developers.front-commerce.com/docs/create-a-ui-component.html)
-* [Create a new Page](https://developers.front-commerce.com/docs/create-custom-page.html)
-* [Extend the GraphQL schema](https://developers.front-commerce.com/docs/extend-graphql-schema.html)
-* [Create a Business Component](https://developers.front-commerce.com/docs/create-a-business-component.html)
+- [Adapt the theme to your brand](https://developers.front-commerce.com/docs/adapt-theme-to-brand.html)
+- [Create or tweak a UI Component](https://developers.front-commerce.com/docs/create-a-ui-component.html)
+- [Create a new Page](https://developers.front-commerce.com/docs/create-custom-page.html)
+- [Extend the GraphQL schema](https://developers.front-commerce.com/docs/extend-graphql-schema.html)
+- [Create a Business Component](https://developers.front-commerce.com/docs/create-a-business-component.html)
 
 If you need help we encourage you to search on the web first. It will help you
 discover the community around each project. You might find additional resources
@@ -175,35 +175,35 @@ in Front-Commerce Lite.
 
 Here are the features we do not plan to add in Front-Commerce Lite:
 
-* **<abbr title="Server Side Rendering">SSR</abbr>:** with SSR comes some
+- **<abbr title="Server Side Rendering">SSR</abbr>:** with SSR comes some
   constraints and complexity we not consider necessary for this project. We
   prefer keeping the implementation simple and straightforward to allow you to
   analyze how everything works internally. If you want to see SSR in action,
   please refer to
   [Front-Commerce’s public demo](https://demo.front-commerce.com/).
-* **complete eCommerce pages:** we will try to keep the number of pages and
+- **complete eCommerce pages:** we will try to keep the number of pages and
   components as minimal as possible to make it easier to see the whole picture.
   Our goal is to showcase possible use cases. In a real project, you will have
   more pages (account, forgotten password, contact page…) to manage
-* **optimized production builds:** the tooling is for a development context
+- **optimized production builds:** the tooling is for a development context
   only. If you want to create a production config, you will have to do it and
   maintain it yourself (it is a great way to learn)
-* **deployment recipes:** if you want to share your project with the world, you
+- **deployment recipes:** if you want to share your project with the world, you
   will have to create your own deployments for your hosting provider of choice
-* **performance optimization:** GraphQL resolvers in Front-Commerce use the
+- **performance optimization:** GraphQL resolvers in Front-Commerce use the
   [DataLoader pattern](https://github.com/facebook/dataloader) with caching to
   improve performance with slow backends. We do not want to introduce this
   complexity here.
-* **refactorings or library upgrades** that do not match what is available in
+- **refactorings or library upgrades** that do not match what is available in
   Front-Commerce: **we do not want to lie to you about Front-Commerce’s state**,
   and want Front-Commerce Lite to match what you will find in Front-Commerce. We
   want to update Front-Commerce Lite only when the code is merged in
   Front-Commerce. Refactorings could be trivial here but not as straightforward
   there…
-* **backwards compatibility:** Front-Commerce Lite should be used for learning
+- **backwards compatibility:** Front-Commerce Lite should be used for learning
   or prototyping. We do not recommend to build a long living project with
   it! Things may be broken.
-* **middleware or backoffice access:** we do not want to maintain complex
+- **middleware or backoffice access:** we do not want to maintain complex
   backend systems for allowing developers to customize data. If you want to use
   your own catalog, you will have to be creative and adapt the core. **We can
   create dedicated demo instances for partners or serious potential customers**.
@@ -218,14 +218,14 @@ yes, **we achieved our goal!**
 
 You now have several solutions:
 
-* start a project from scratch using these technologies. If your needs are
+- start a project from scratch using these technologies. If your needs are
   simple it could be a solution, otherwise prepare yourself to months of work!
-* compare with existing alternatives and choose the one which fits your needs
+- compare with existing alternatives and choose the one which fits your needs
   and budget: features, architecture, test coverage and (if they are open
   source) the quality of their codebase
-* fork Front-Commerce Lite in the open, follow our philosophy and architecture…
+- fork Front-Commerce Lite in the open, follow our philosophy and architecture…
   and name it React Storefront :)
-* use [Front-Commerce](https://www.front-commerce.com/) and start developing
+- use [Front-Commerce](https://www.front-commerce.com/) and start developing
   your features on top of a production ready solution **right now!**
 
 :email:
