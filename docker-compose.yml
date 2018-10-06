@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 services:
   npm:
     image: node:8.10.0
@@ -22,5 +22,17 @@ services:
       - ./:/project
       - ~/.npm:/root/.npm
     command: run storybook
+    entrypoint: npm
+    working_dir: /project
+
+  upward:
+    image: node:8.10.0
+    network_mode: "bridge"
+    ports:
+      - "4242:4242"
+    volumes:
+      - ./:/project
+      - ~/.npm:/root/.npm
+    command: run upward
     entrypoint: npm
     working_dir: /project

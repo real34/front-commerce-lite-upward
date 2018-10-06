@@ -10,7 +10,8 @@
     "dev:server": "NODE_ENV=development nodemon build/server.js",
     "dev:client": "NODE_ENV=development webpack-dev-server --config webpack.config.js",
     "start": "concurrently -k \"npm run watch:server\" \"npm run dev:server\" \"npm run dev:client\"",
-    "storybook": "start-storybook -p 9001 -s .storybook"
+    "storybook": "start-storybook -p 9001 -s .storybook",
+    "upward": "UPWARD_JS_LOG_URL=1 UPWARD_JS_BIND_LOCAL=1 UPWARD_JS_PORT=4242 UPWARD_JS_UPWARD_PATH=./fcl-upward-server.yml upward-js-server"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
   "homepage": "https://github.com/front-commerce/front-commerce-lite#readme",
   "dependencies": {
     "@gramps/gramps": "^1.4.0",
+    "@magento/upward-js": "^2.0.0-rc2.0.5",
     "apollo-boost": "^0.1.16",
     "apollo-client": "^2.4.2",
     "apollo-link-http": "^1.5.5",

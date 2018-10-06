@@ -1,0 +1,36 @@
+status: page.status
+headers: page.headers
+body: page.body
+
+textHtml:
+  inline:
+    "content-type": "text/html"
+
+notFound:
+  inline:
+    status: 404
+    headers: textHtml
+    body: "./build/client/index.html"
+
+static:
+  directory:
+    inline: "./build/client"
+
+graphql:
+  proxy:
+    target: https://demo.front-commerce.com/graphql
+    ignoreSSLErrors: true
+
+page:
+  when:
+    - matches: request.url.pathname
+      pattern: "/graphql"
+      use: graphql
+    - matches: request.url.pathname
+      pattern: "^/$"
+      use:
+        inline:
+          status: 200
+          headers: textHtml
+          body: "./build/client/index.html"
+  default: static

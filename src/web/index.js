@@ -5,7 +5,7 @@ import { ApolloProvider } from "react-apollo";
 import Router from "./Router";
 
 const client = new ApolloClient({
-  uri: process.env.BACKEND_URL || "http://127.0.0.1:4000/graphql"
+  uri: process.env.BACKEND_URL || "/graphql"
 });
 
 ReactDOM.render(
