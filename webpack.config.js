@@ -2,6 +2,9 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const NodeExternals = require("webpack-node-externals");
+const {
+  WebpackTools: { UpwardPlugin }
+} = require("@magento/pwa-buildpack");
 
 const sass = {
   globalsImportStatements: '@import "globals.scss";',
@@ -80,6 +83,25 @@ const universalRules = [
   }
 ];
 
+let devServer = {
+  hot: true,
+  open: true,
+  contentBase: "./build",
+  host: "0.0.0.0",
+  overlay: true,
+  disableHostCheck: true,
+  historyApiFallback: true
+};
+
+const plugins = [
+  new HtmlWebpackPlugin({
+    template: "src/index.html"
+  }),
+  new webpack.NamedModulesPlugin(),
+  new webpack.HotModuleReplacementPlugin(),
+  new UpwardPlugin(devServer, path.resolve(__dirname, "fcl-upward-server.yml"))
+];
+
 module.exports = [
   {
     name: "client",
@@ -90,25 +112,11 @@ module.exports = [
       publicPath: "/",
       path: path.resolve(__dirname, "build")
     },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: "src/index.html"
-      }),
-      new webpack.NamedModulesPlugin(),
-      new webpack.HotModuleReplacementPlugin()
-    ],
+    plugins: plugins,
     module: {
       rules: [...universalRules]
     },
-    devServer: {
-      hot: true,
-      open: true,
-      contentBase: "./build",
-      host: "0.0.0.0",
-      overlay: true,
-      disableHostCheck: true,
-      historyApiFallback: true
-    },
+    devServer: devServer,
     resolve: {
       alias: {
         theme: path.resolve(__dirname, "src/web/theme")
