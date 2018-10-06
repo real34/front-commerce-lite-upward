@@ -9,7 +9,7 @@
     "watch:server": "NODE_ENV=development webpack --watch --config webpack.config.js --config-name server",
     "dev:server": "NODE_ENV=development nodemon build/server.js",
     "dev:client": "NODE_ENV=development webpack-dev-server --config webpack.config.js",
-    "start": "concurrently -k \"npm run watch:server\" \"npm run dev:server\" \"npm run dev:client\"",
+    "start": "npm run upward",
     "storybook": "start-storybook -p 9001 -s .storybook",
     "upward": "UPWARD_JS_LOG_URL=1 UPWARD_JS_BIND_LOCAL=1 UPWARD_JS_PORT=4242 UPWARD_JS_UPWARD_PATH=./fcl-upward-server.yml upward-js-server"
   },
