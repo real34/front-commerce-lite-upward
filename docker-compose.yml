@@ -9,7 +9,7 @@ services:
     volumes:
       - ./:/project
       - ~/.npm:/root/.npm
-    command: start
+    command: run dev:client
     entrypoint: npm
     working_dir: /project
 
